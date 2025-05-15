@@ -991,3 +991,746 @@ ModuleNotFoundError: No module named 'requests'
 2025-05-15 13:33:46 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
 2025-05-15 13:33:46 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316026679, 'signature': '2cf39d33d22df83a7125733d5ae9772c8647e846a2c470d2a126516d4190225f'}
 2025-05-15 13:33:46 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:34:47 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:34:53 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:34:53 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:34:55 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:34:55 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:34:55 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316095429, 'signature': '0369c9546ae4ca085b219a2506d36146d2770261b7d9dc5c820b0969a290d229'}
+2025-05-15 13:34:55 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:35:55 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:36:01 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:36:02 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:36:04 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:36:04 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:36:04 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316164243, 'signature': 'd91647bad2a2ba3676d5ef7d6c8a6a092af483819e095b9015a9e15602fb54f5'}
+2025-05-15 13:36:04 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:37:04 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:37:10 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:37:10 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:37:12 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:37:12 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:37:12 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316232334, 'signature': 'fd309bfec37da97e5c9f6c4687d63f65d69802e6559b5f02fe8a808315a36eed'}
+2025-05-15 13:37:12 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:38:12 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:38:19 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:38:19 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:38:21 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:38:21 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:38:21 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316301766, 'signature': '14b38ac0f4c261491c7e4df6308252fdd7a6b7d012c0bd6278a320f434c64727'}
+2025-05-15 13:38:21 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:39:22 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:39:27 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:39:28 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:39:30 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:39:30 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:39:30 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316370187, 'signature': '0396ecbbe88badcd88ecb9b4053c9c15da38f263e688f40bcce853e06d74da9f'}
+2025-05-15 13:39:30 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:40:30 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:40:36 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:40:36 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:40:38 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:40:38 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:40:38 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316438743, 'signature': 'af653ac515dc96776752742c2ae36c792b9b7816987975ff2ecaa07c34ed5088'}
+2025-05-15 13:40:38 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:41:39 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:41:45 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:41:45 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:41:47 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:41:47 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:41:47 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316507497, 'signature': 'ce360ca5b2e2c62d6fbee3aa34ddebba0c8764212a29fb383d0d3ef4fce5aac2'}
+2025-05-15 13:41:47 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:42:48 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:42:53 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:42:54 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:42:55 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:42:55 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:42:55 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316575792, 'signature': 'ffce1f9e651337b5e278b3a6f0bb3d88d0e992e67d16e75c6cabf55e800f7244'}
+2025-05-15 13:42:55 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:43:56 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:44:02 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:44:02 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:44:04 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:44:04 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:44:04 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316644330, 'signature': '694a909ea9da6726a1f42bfb8709c71d2155cf7e4ab89428ef72c22fef21811b'}
+2025-05-15 13:44:04 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:44:12 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:44:18 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:44:19 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:44:21 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:44:21 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:44:21 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:44:21 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:44:27 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:44:28 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:44:30 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:44:30 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:44:30 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:44:30 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:44:36 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:44:37 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:44:38 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:44:38 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:44:38 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:44:39 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:44:45 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:44:45 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:44:47 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:44:47 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:44:47 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:44:48 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:44:54 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:44:54 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:44:56 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:44:56 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:44:56 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:44:58 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:45:04 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:45:04 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:45:06 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:45:06 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:45:06 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:45:10 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:45:15 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:45:16 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:45:18 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:45:18 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:45:18 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:45:25 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:45:30 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:45:30 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:45:32 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:45:32 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:45:32 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:45:45 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:45:51 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:45:51 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:45:53 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:45:53 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:45:53 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:46:19 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:46:25 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:46:26 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:46:28 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:46:28 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:46:28 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:47:20 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:47:25 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:47:25 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:47:27 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:47:27 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:47:27 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:48:28 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:48:33 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:48:33 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:48:35 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:48:35 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:48:35 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 51, in execute_trade
+    if not self.is_trade_valid(pair, quantity, price):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'is_trade_valid'
+2025-05-15 13:49:36 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:49:41 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:49:41 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:49:43 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:49:43 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:49:57 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:50:03 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:50:03 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:50:05 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:50:05 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:50:05 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:50:11 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:50:11 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:50:13 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:50:13 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:50:13 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:50:19 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:50:19 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:50:21 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:50:21 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:50:22 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:50:28 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:50:28 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:50:30 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:50:30 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:50:31 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:50:37 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:50:37 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:50:39 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:50:39 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:50:41 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:50:47 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:50:47 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:50:49 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:50:49 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:50:52 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:50:57 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:50:58 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:51:00 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:51:00 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:51:06 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:51:12 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:51:12 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:51:14 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:51:14 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:51:27 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:51:33 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:51:34 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:51:35 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:51:35 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:51:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:51:59 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:51:59 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:52:01 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:52:01 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:52:02 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:52:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:52:08 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:52:10 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:52:10 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:52:11 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:52:16 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:52:17 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:52:19 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:52:19 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:52:19 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:52:25 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:52:25 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:52:27 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:52:27 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:52:28 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:52:34 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:52:34 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:52:36 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:52:36 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:52:38 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:52:43 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:52:43 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:52:45 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:52:45 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:52:49 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:52:54 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:52:56 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:52:57 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:52:57 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:53:04 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:53:09 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:53:11 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:53:12 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:53:12 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:53:26 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:53:31 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:53:31 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:53:33 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:53:33 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:53:59 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:54:05 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:54:05 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:54:07 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:54:07 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:54:59 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:55:04 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:55:04 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:55:07 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:55:07 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:56:07 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:56:12 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:56:13 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:56:15 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:56:15 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'execute_trade'
+2025-05-15 13:57:01 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:57:07 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:57:07 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:57:09 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:57:09 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:57:09 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:57:09 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 13:57:10 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:57:15 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:57:16 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:57:18 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:57:18 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:57:18 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:57:18 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 13:57:18 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:57:24 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:57:25 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:57:27 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:57:27 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:57:27 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:57:27 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 13:57:28 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:57:34 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:57:34 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:57:36 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:57:36 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:57:36 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:57:36 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 13:57:37 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:57:43 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:57:44 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:57:45 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:57:45 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:57:45 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:57:45 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 13:57:48 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:57:53 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:57:53 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:57:55 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:57:55 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:57:55 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:57:55 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 13:57:59 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:58:04 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:58:04 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:58:06 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:58:06 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:58:06 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:58:06 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 13:58:13 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:58:18 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:58:19 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:58:21 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:58:21 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:58:21 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:58:21 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 13:58:34 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:58:39 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:58:40 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:58:41 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:58:41 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:58:41 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:58:41 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 13:59:08 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:59:13 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:59:14 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:59:16 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:59:16 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:59:16 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 13:59:16 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 14:00:07 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:00:13 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:00:13 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:00:15 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:00:15 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:00:15 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:00:15 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 14:01:16 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:01:21 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:01:22 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:01:23 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:01:23 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:01:23 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:01:23 | ERROR | arb-bot | [ERROR] Failed to log dry-run opportunity or execute trade
+Traceback (most recent call last):
+  File "/app/src/../src/engine.py", line 34, in scan_market
+    executor.execute_trade(
+  File "/app/src/../src/trader.py", line 98, in execute_trade
+    return self.preview_binance_order(symbol, side, quantity, price)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TradeExecutor' object has no attribute 'preview_binance_order'
+2025-05-15 14:01:36 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:01:42 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:01:42 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:01:44 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:01:44 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:01:44 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:01:44 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317704842, 'signature': 'f1529d37a3c06a384ba77aa3f30bc755f54a96d7585da352fddfc7776cf84357'}
+2025-05-15 14:01:44 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:01:45 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:01:51 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:01:51 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:01:53 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:01:53 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:01:53 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:01:53 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317713242, 'signature': 'b724482b42ec796b465272340b101a0177f740a2b6e169bcd848167f1b38f6ef'}
+2025-05-15 14:01:53 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:01:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:01:59 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:02:00 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:02:02 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:02:02 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:02:02 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:02:02 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317722391, 'signature': '1132f8cc6b64d0fcd7bb7c03a02818fefc236051cc47606720d7d27f91b1036c'}
+2025-05-15 14:02:02 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:02:03 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:02:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:02:09 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:02:10 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:02:10 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:02:10 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:02:10 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317730971, 'signature': 'dbbfdbf51d4daa42f6ddeafc87cac5e3cfc472c88a3fadf5f69d52274a7eb36c'}
+2025-05-15 14:02:10 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:02:12 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:02:17 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:02:18 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:02:20 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:02:20 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:02:20 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:02:20 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317740203, 'signature': 'ca3db95fb7fce8ff8560cac03ce44a6bc96b8947e7811b7672611baea08f52c0'}
+2025-05-15 14:02:20 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:02:22 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:02:27 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:02:28 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:02:30 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:02:30 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:02:30 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:02:30 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317750002, 'signature': '3f93e2cda27573969213bf939e4b75f04809f63fff2f01eee9dfe5f5aa5c1910'}
+2025-05-15 14:02:30 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:02:33 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:02:39 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:02:39 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:02:41 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:02:41 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:02:41 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:02:41 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317761450, 'signature': '6d105707c8b5db363cdb374d6fa4d5b47b0ef08a622d92ce72dc232fc239a189'}
+2025-05-15 14:02:41 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:02:48 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:02:54 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:02:54 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:02:56 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:02:56 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:02:56 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:02:56 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317776554, 'signature': '80cfc3bad9e037b78b4ef34bb1c349f1f0205ef55f7abf022c5935cb2161456c'}
+2025-05-15 14:02:56 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:03:09 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:03:15 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:03:15 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:03:17 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:03:17 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:03:17 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:03:17 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317797328, 'signature': 'b37374d198db394d08d843364708a50393aac54c8722a8df91f05baea44d5412'}
+2025-05-15 14:03:17 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:03:43 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:03:48 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:03:49 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:03:51 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:03:51 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:03:51 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:03:51 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317831100, 'signature': '9214655df875021aec9bfbefc79f99cb1df14722bde18b924f5a23631ca752b7'}
+2025-05-15 14:03:51 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:04:42 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:04:48 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:04:49 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:04:51 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:04:51 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:04:51 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:04:51 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317891008, 'signature': '247b061fe0cad7324906796dcd116a21a7d51ce4d18d2b0c857b7db8de389510'}
+2025-05-15 14:04:51 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:05:51 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:05:57 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:05:57 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:05:59 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:05:59 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:05:59 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:05:59 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747317959420, 'signature': '67fac11ecd949dc02b046748e598a1a9774a1764750d372d87a845202c21271d'}
+2025-05-15 14:05:59 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:06:59 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:07:05 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:07:06 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:07:08 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:07:08 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:07:08 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:07:08 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747318028353, 'signature': '240c2f9f58fd6f96424cd27e1d4d614668c9f9ce6e6fe74e56daa9b3aca120d4'}
+2025-05-15 14:07:08 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:08:08 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:08:14 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:08:14 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:08:16 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:08:16 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:08:16 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:08:16 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747318096192, 'signature': '1b3e4af3465fb02aba93fdb1ff0fa7159e6e6c7979f80265904dfa8c91078feb'}
+2025-05-15 14:08:16 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:09:16 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:09:22 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:09:22 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:09:24 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:09:24 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:09:24 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:09:24 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747318164624, 'signature': '104743c6e916d488f2295c50eb2c0b0c3443b11e72ed607e37bf73e340dbc7ae'}
+2025-05-15 14:09:24 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:10:25 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:10:30 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:10:31 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:10:32 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:10:32 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:10:32 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:10:32 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747318232818, 'signature': '73f2b7bea4476bffb0149ccdf69808ce2c7c6543f262c259f7fee448115e4f7b'}
+2025-05-15 14:10:32 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 14:11:33 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 14:11:39 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 14:11:39 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 14:11:41 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 14:11:41 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 14:11:41 | INFO | arb-bot | [VALIDATION] Trade accepted for ETH/USDC | qty=1.5, price=1850.0
+2025-05-15 14:11:41 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747318301619, 'signature': '46d49d871a7481cd2ac72473d8adee14aa78b36d80d07eb1d74e8e6859168ee6'}
+2025-05-15 14:11:41 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
