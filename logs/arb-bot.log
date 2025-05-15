@@ -1,0 +1,993 @@
+2025-05-15 11:02:46 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:02:53 | CRITICAL | arb-bot | Uncaught exception
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:03:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:04:00 | CRITICAL | arb-bot | Uncaught exception
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:05:00 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:05:07 | CRITICAL | arb-bot | Uncaught exception
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:06:07 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:06:14 | CRITICAL | arb-bot | Uncaught exception
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:07:14 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:07:20 | CRITICAL | arb-bot | Uncaught exception
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:08:21 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:08:28 | CRITICAL | arb-bot | Uncaught exception
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:09:26 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:09:33 | CRITICAL | arb-bot | Uncaught exception | Type: RuntimeError | Value: Test uncaught error
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:09:33 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:09:40 | CRITICAL | arb-bot | Uncaught exception | Type: RuntimeError | Value: Test uncaught error
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:09:41 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:09:48 | CRITICAL | arb-bot | Uncaught exception | Type: RuntimeError | Value: Test uncaught error
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:09:48 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:09:55 | CRITICAL | arb-bot | Uncaught exception | Type: RuntimeError | Value: Test uncaught error
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:09:56 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:10:02 | CRITICAL | arb-bot | Uncaught exception | Type: RuntimeError | Value: Test uncaught error
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:10:04 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:10:10 | CRITICAL | arb-bot | Uncaught exception | Type: RuntimeError | Value: Test uncaught error
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:10:14 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:10:20 | CRITICAL | arb-bot | Uncaught exception | Type: RuntimeError | Value: Test uncaught error
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:10:27 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:10:34 | CRITICAL | arb-bot | Uncaught exception | Type: RuntimeError | Value: Test uncaught error
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:10:47 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:10:53 | CRITICAL | arb-bot | Uncaught exception | Type: RuntimeError | Value: Test uncaught error
+Traceback (most recent call last):
+  File "/app/src/main.py", line 26, in <module>
+    raise RuntimeError("Test uncaught error")
+RuntimeError: Test uncaught error
+2025-05-15 11:11:19 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:11:32 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:11:39 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:11:46 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:11:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:12:01 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:12:10 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:12:19 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:12:33 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:12:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:13:26 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:14:24 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:15:32 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:16:38 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:17:46 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:18:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:20:00 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:21:07 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:22:14 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:23:21 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:24:05 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:24:11 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:24:12 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:24:12 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:13 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:13 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:24:19 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:24:21 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:24:21 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:21 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:22 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:24:27 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:24:29 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:24:29 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:30 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:31 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:24:37 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:24:39 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:24:39 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:39 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:40 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:24:46 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:24:47 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:24:47 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:48 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:50 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:24:55 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:24:57 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:24:57 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:24:57 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:25:01 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:25:07 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:25:09 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:25:09 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:25:09 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:25:16 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:25:22 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:25:24 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:25:24 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:25:24 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:25:37 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:25:42 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:25:44 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:25:44 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:25:44 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:26:10 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:26:16 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:26:18 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:26:18 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:26:18 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:27:10 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:27:16 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:27:17 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:27:17 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:27:18 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:28:18 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:28:24 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:28:26 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:28:26 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:28:26 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:29:26 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:29:32 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:29:34 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:29:34 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:29:34 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:30:35 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:30:41 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:30:43 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:30:43 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:30:43 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:31:44 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:31:49 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:31:51 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:31:51 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:31:52 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:32:55 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:33:00 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:33:02 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:33:02 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:33:03 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:34:03 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:34:09 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:34:11 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:34:11 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:34:11 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:35:11 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:35:17 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:35:19 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:35:19 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:35:19 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:36:19 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:36:26 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:36:27 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:36:27 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:36:28 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:37:28 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:37:34 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:37:36 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:37:36 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:37:37 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:38:37 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:38:42 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:38:44 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:38:44 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:38:44 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:39:45 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:39:50 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:39:52 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:39:52 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:39:53 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:40:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:40:59 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:41:00 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:41:00 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:41:01 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:43:04 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:43:10 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:43:12 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:43:12 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:43:12 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:50:41 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:54:00 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:54:02 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:54:02 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:02 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:03 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:54:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:54:10 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:54:10 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:10 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:11 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:54:17 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:54:19 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:54:19 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:19 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:20 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:54:25 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:54:27 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:54:27 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:27 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:29 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:54:34 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:54:36 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:54:36 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:36 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:54:38 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 11:56:52 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 11:56:54 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 11:56:54 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:56:54 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 11:56:55 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:07:12 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:07:14 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:07:14 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:14 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:15 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:07:21 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:07:23 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:07:23 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:23 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:24 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:07:30 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:07:32 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:07:32 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:32 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:33 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:07:39 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:07:41 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:07:41 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:42 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:43 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:07:49 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:07:51 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:07:51 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:52 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:07:54 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:08:00 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:08:02 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:08:02 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:08:02 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:08:06 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:08:11 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:08:13 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:08:13 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:08:13 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:08:20 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:08:26 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:08:28 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:08:28 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:08:28 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:08:42 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:08:48 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:08:50 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:08:50 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:08:50 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:09:16 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:09:22 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:09:24 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:09:24 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:09:24 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:10:16 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:10:22 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:10:24 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:10:24 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:10:24 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:11:25 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:11:31 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:11:33 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:11:33 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:11:33 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:12:33 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:12:39 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:12:41 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:12:41 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:12:42 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:13:42 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:13:49 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:13:50 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:13:50 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:13:51 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:14:51 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:14:57 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:14:59 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:14:59 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:14:59 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:16:00 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:16:06 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:16:08 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:16:08 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:16:08 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:17:09 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:17:14 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:17:16 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:17:16 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:17:17 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:18:17 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:18:23 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:18:25 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:18:25 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:18:26 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:19:26 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:19:32 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:19:34 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:19:34 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:19:34 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:20:35 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:20:41 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:20:43 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:20:43 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:20:43 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:21:44 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:21:50 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:21:52 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:21:52 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:21:52 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:22:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:22:59 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:23:01 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:23:01 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:23:01 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:24:02 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:24:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:24:10 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:24:10 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:24:10 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:25:10 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:25:17 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:25:19 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:25:19 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:25:19 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:26:19 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:26:26 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:26:28 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:26:28 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:26:28 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:27:28 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:27:35 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:27:37 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:27:37 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:27:37 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:28:37 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:28:43 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:28:45 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:28:45 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:28:45 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:29:46 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:29:52 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:29:54 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:29:54 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:29:54 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:30:54 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:31:00 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:31:02 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:31:02 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:31:02 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:32:03 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:32:09 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:32:11 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:32:11 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:32:11 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:33:12 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:33:18 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:33:20 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:33:20 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:33:20 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:34:21 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:34:26 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:34:28 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:34:28 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:34:28 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:34:48 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:34:48 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:34:49 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:34:49 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:34:49 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:34:49 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:34:50 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:34:50 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:34:51 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:34:51 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:34:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:34:53 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:34:56 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:34:56 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:35:03 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:35:03 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:35:16 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:35:16 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:35:42 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:35:42 | CRITICAL | arb-bot | Uncaught exception | Type: ModuleNotFoundError | Value: No module named 'requests'
+Traceback (most recent call last):
+  File "/app/src/main.py", line 8, in <module>
+    from src.engine import scan_market
+  File "/app/src/../src/engine.py", line 8, in <module>
+    from src.trader import TradeExecutor
+  File "/app/src/../src/trader.py", line 5, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+2025-05-15 12:35:56 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:36:01 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:36:02 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:36:04 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:36:04 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:36:04 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:36:04 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:36:04 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:36:10 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:36:10 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:36:12 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:36:12 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:36:12 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:36:12 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:36:13 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:36:19 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:36:20 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:36:22 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:36:22 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:36:22 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:36:22 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:36:23 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:36:29 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:36:29 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:36:31 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:36:31 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:36:31 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:36:31 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:36:32 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:36:38 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:36:38 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:36:40 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:36:40 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:36:40 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:36:40 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:36:42 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:36:47 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:36:47 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:36:49 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:36:49 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:36:49 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:36:49 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:36:53 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:36:58 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:36:59 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:37:01 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:37:01 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:37:01 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:37:01 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:37:07 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:37:13 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:37:13 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:37:15 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:37:15 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:37:15 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:37:15 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:37:28 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:37:34 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:37:34 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:37:36 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:37:36 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:37:36 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:37:36 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:38:02 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:38:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:38:09 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:38:11 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:38:11 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:38:11 | WARNING | arb-bot | [FILTER] Could not evaluate filters for ETHUSDC
+2025-05-15 12:38:11 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:38:32 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:38:37 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:38:38 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:38:40 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:38:40 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:38:40 | WARNING | arb-bot | [FILTER] No MIN_NOTIONAL filter for ETHUSDC. Available: ['PRICE_FILTER', 'LOT_SIZE', 'ICEBERG_PARTS', 'MARKET_LOT_SIZE', 'TRAILING_DELTA', 'PERCENT_PRICE_BY_SIDE', 'NOTIONAL', 'MAX_NUM_ORDERS', 'MAX_NUM_ALGO_ORDERS']
+2025-05-15 12:38:40 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:38:40 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:38:46 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:38:46 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:38:48 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:38:48 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:38:48 | WARNING | arb-bot | [FILTER] No MIN_NOTIONAL filter for ETHUSDC. Available: ['PRICE_FILTER', 'LOT_SIZE', 'ICEBERG_PARTS', 'MARKET_LOT_SIZE', 'TRAILING_DELTA', 'PERCENT_PRICE_BY_SIDE', 'NOTIONAL', 'MAX_NUM_ORDERS', 'MAX_NUM_ALGO_ORDERS']
+2025-05-15 12:38:48 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:38:49 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:38:54 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:38:55 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:38:56 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:38:56 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:38:56 | WARNING | arb-bot | [FILTER] No MIN_NOTIONAL filter for ETHUSDC. Available: ['PRICE_FILTER', 'LOT_SIZE', 'ICEBERG_PARTS', 'MARKET_LOT_SIZE', 'TRAILING_DELTA', 'PERCENT_PRICE_BY_SIDE', 'NOTIONAL', 'MAX_NUM_ORDERS', 'MAX_NUM_ALGO_ORDERS']
+2025-05-15 12:38:56 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:38:57 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:39:03 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:39:03 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:39:05 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:39:05 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:39:05 | WARNING | arb-bot | [FILTER] No MIN_NOTIONAL filter for ETHUSDC. Available: ['PRICE_FILTER', 'LOT_SIZE', 'ICEBERG_PARTS', 'MARKET_LOT_SIZE', 'TRAILING_DELTA', 'PERCENT_PRICE_BY_SIDE', 'NOTIONAL', 'MAX_NUM_ORDERS', 'MAX_NUM_ALGO_ORDERS']
+2025-05-15 12:39:05 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:39:06 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:39:12 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:39:12 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:39:14 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:39:14 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:39:14 | WARNING | arb-bot | [FILTER] No MIN_NOTIONAL filter for ETHUSDC. Available: ['PRICE_FILTER', 'LOT_SIZE', 'ICEBERG_PARTS', 'MARKET_LOT_SIZE', 'TRAILING_DELTA', 'PERCENT_PRICE_BY_SIDE', 'NOTIONAL', 'MAX_NUM_ORDERS', 'MAX_NUM_ALGO_ORDERS']
+2025-05-15 12:39:14 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:39:16 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:39:21 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:39:22 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:39:23 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:39:23 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:39:23 | WARNING | arb-bot | [FILTER] No MIN_NOTIONAL filter for ETHUSDC. Available: ['PRICE_FILTER', 'LOT_SIZE', 'ICEBERG_PARTS', 'MARKET_LOT_SIZE', 'TRAILING_DELTA', 'PERCENT_PRICE_BY_SIDE', 'NOTIONAL', 'MAX_NUM_ORDERS', 'MAX_NUM_ALGO_ORDERS']
+2025-05-15 12:39:23 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:39:27 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:39:32 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:39:33 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:39:35 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:39:35 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:39:35 | WARNING | arb-bot | [FILTER] No MIN_NOTIONAL filter for ETHUSDC. Available: ['PRICE_FILTER', 'LOT_SIZE', 'ICEBERG_PARTS', 'MARKET_LOT_SIZE', 'TRAILING_DELTA', 'PERCENT_PRICE_BY_SIDE', 'NOTIONAL', 'MAX_NUM_ORDERS', 'MAX_NUM_ALGO_ORDERS']
+2025-05-15 12:39:35 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:39:41 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:39:47 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:39:47 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:39:49 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:39:49 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:39:49 | WARNING | arb-bot | [FILTER] No MIN_NOTIONAL filter for ETHUSDC. Available: ['PRICE_FILTER', 'LOT_SIZE', 'ICEBERG_PARTS', 'MARKET_LOT_SIZE', 'TRAILING_DELTA', 'PERCENT_PRICE_BY_SIDE', 'NOTIONAL', 'MAX_NUM_ORDERS', 'MAX_NUM_ALGO_ORDERS']
+2025-05-15 12:39:49 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:40:02 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:40:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:40:08 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:40:10 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:40:10 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:40:10 | WARNING | arb-bot | [FILTER] No MIN_NOTIONAL filter for ETHUSDC. Available: ['PRICE_FILTER', 'LOT_SIZE', 'ICEBERG_PARTS', 'MARKET_LOT_SIZE', 'TRAILING_DELTA', 'PERCENT_PRICE_BY_SIDE', 'NOTIONAL', 'MAX_NUM_ORDERS', 'MAX_NUM_ALGO_ORDERS']
+2025-05-15 12:40:10 | WARNING | arb-bot | [SKIPPED] Trade rejected due to filters: ETH/USDC 1.5 @ 1850.0
+2025-05-15 12:40:36 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:40:42 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:40:43 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:40:45 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:40:45 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:40:45 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:02 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:41:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:41:09 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:41:11 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:41:11 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:11 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:12 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:41:17 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:41:18 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:41:20 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:41:20 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:20 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:21 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:41:27 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:41:27 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:41:29 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:41:29 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:30 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:31 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:41:37 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:41:37 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:41:39 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:41:39 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:39 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:41 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:41:46 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:41:47 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:41:49 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:41:49 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:49 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:51 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:41:56 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:41:57 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:41:59 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:41:59 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:41:59 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:42:03 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:42:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:42:09 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:42:11 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:42:11 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:42:11 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:42:18 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:42:24 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:42:24 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:42:26 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:42:26 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:42:26 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:42:40 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:42:46 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:42:47 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:42:49 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:42:49 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:42:49 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:43:15 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:43:21 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:43:21 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:43:23 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:43:23 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:43:24 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:44:15 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:44:21 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:44:21 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:44:23 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:44:23 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:44:23 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:49:37 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:49:43 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:49:44 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:49:46 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:49:46 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:49:46 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:57:29 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:57:35 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:57:35 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:57:37 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:57:37 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:57:37 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:58:38 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:58:43 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:58:44 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:58:46 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:58:46 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:58:46 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:59:47 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 12:59:52 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 12:59:52 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 12:59:54 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 12:59:54 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 12:59:54 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:00:55 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:01:00 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:01:01 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:01:02 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:01:02 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:01:03 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:02:03 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:02:09 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:02:10 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:02:12 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:02:12 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:02:12 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:03:12 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:03:19 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:03:19 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:03:21 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:03:21 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:03:22 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:04:22 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:04:28 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:04:29 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:04:31 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:04:31 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:04:31 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:05:32 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:05:38 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:05:38 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:05:40 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:05:40 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:05:40 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:06:41 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:06:47 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:06:47 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:06:49 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:06:49 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:06:50 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:07:50 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:07:55 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:07:56 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:07:58 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:07:58 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:07:58 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:08:59 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:09:05 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:09:05 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:09:07 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:09:07 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:09:07 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:10:08 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:10:14 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:10:14 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:10:16 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:10:16 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:10:17 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:11:17 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:11:23 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:11:24 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:11:26 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:11:26 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:11:26 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:12:27 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:12:32 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:12:33 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:12:35 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:12:35 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:12:35 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:13:36 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:13:41 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:13:42 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:13:43 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:13:43 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:13:44 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:14:44 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:14:49 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:14:50 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:14:52 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:14:52 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:14:52 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:15:52 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:15:58 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:15:59 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:16:01 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:16:01 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:16:01 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:17:02 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:17:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False
+2025-05-15 13:17:08 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:17:10 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:17:10 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:17:10 | INFO | arb-bot | [LIVE] Executed buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:18:11 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:18:17 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:18:17 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:18:19 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:18:19 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:18:19 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315099993, 'signature': '8647ba4dd3c7e063db8a35386e4281d8bff17e9d276aadc01dfa399f1b70c291'}
+2025-05-15 13:18:19 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:19:02 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:19:08 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:19:09 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:19:11 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:19:11 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:19:11 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315151094, 'signature': 'd9a4ed291a82584e26221a0a32f89a8adc7e46800fb66cf218feb3ea44cf5c35'}
+2025-05-15 13:19:11 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:19:11 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:19:17 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:19:17 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:19:19 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:19:19 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:19:19 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315159694, 'signature': 'b7ade6fee3d9f4cbcad6de01ee3d28986d6aa895682e97d8baec66809eecadfc'}
+2025-05-15 13:19:19 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:19:20 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:19:26 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:19:27 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:19:29 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:19:29 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:19:29 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315169320, 'signature': '095e8acd2f2e34aa40a4f140b46ee044192ac381fa2fdef186a44fe75dc309b1'}
+2025-05-15 13:19:29 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:19:30 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:19:37 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:19:37 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:19:39 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:19:39 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:19:39 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315179596, 'signature': '9f933dacf123ec5dfb7b245e1619867ce8aaff74df02fd7d9321e8f15cff7b50'}
+2025-05-15 13:19:39 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:19:40 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:19:46 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:19:47 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:19:48 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:19:48 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:19:48 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315188829, 'signature': '85707969a9c47f655adbfe9f665037499abf67f8183006a1c79e0bd496f27fec'}
+2025-05-15 13:19:48 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:19:50 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:19:56 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:19:56 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:19:58 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:19:58 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:19:58 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315198491, 'signature': '221b1b79056d20ae0263d027e527d9d9f9c7e23f27eab9654cb699495dba008f'}
+2025-05-15 13:19:58 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:20:02 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:20:07 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:20:08 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:20:09 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:20:09 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:20:09 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315209913, 'signature': '0cb066360ed5c72eb987c4f6afd99f9d93d2d9c1ef88fd023817d20371a8a5c3'}
+2025-05-15 13:20:09 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:20:16 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:20:22 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:20:23 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:20:25 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:20:25 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:20:25 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315225004, 'signature': '8f44007b3d2665663dc9a253cc29d93a2c1f11080bbdc37ad8ab2d582f723fdd'}
+2025-05-15 13:20:25 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:20:38 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:20:44 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:20:44 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:20:46 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:20:46 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:20:46 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315246580, 'signature': '6ec67bc5f061fdb4a367a48dc137e16dce5bc554c687087c1ced2ac323cc6541'}
+2025-05-15 13:20:46 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:21:12 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:21:18 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:21:18 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:21:20 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:21:20 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:21:20 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315280593, 'signature': '7c242423aafd2a0b057b25e3c585c44f5d16b707f8c065029dee40c08d31ccf6'}
+2025-05-15 13:21:20 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:22:12 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:22:18 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:22:18 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:22:20 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:22:20 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:22:20 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315340382, 'signature': 'af681d332932c509ffdf2bf875a588ca4c9edf3c635e347fc140a6ded11e13dd'}
+2025-05-15 13:22:20 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:23:20 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:23:26 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:23:28 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:23:29 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:23:29 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:23:29 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315409965, 'signature': '9c54f9a1947f221d734585c56b82d43dcef2fe2834dc1553cbe7a15926870b45'}
+2025-05-15 13:23:29 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:24:30 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:24:35 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:24:36 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:24:38 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:24:38 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:24:38 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315478464, 'signature': '8c3babb91dafe79f45774b8f5a653f2441d8335040f2717cb724f14fbf045e61'}
+2025-05-15 13:24:38 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:25:38 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:25:44 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:25:45 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:25:46 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:25:46 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:25:46 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315546876, 'signature': '167bcfcd2102200f828407c07bda81dc1764c8feb2efa60fce33c098f9562c05'}
+2025-05-15 13:25:46 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:26:47 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:26:52 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:26:53 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:26:55 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:26:55 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:26:55 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315615273, 'signature': '39701361f369058f63ad0af34cf94e01536d90b094623de278bcba2f552deec1'}
+2025-05-15 13:26:55 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:27:55 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:28:01 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:28:02 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:28:04 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:28:04 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:28:04 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315684186, 'signature': '0f3cd339f47265fdd0a5c7823d151d210334091afe08ac77fd170fbfd2d6aacb'}
+2025-05-15 13:28:04 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:29:04 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:29:09 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:29:10 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:29:12 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:29:12 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:29:12 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315752153, 'signature': '76feede93afd32ee9ceb91b4eb009edccf8366da03ace3511557697fd42896f4'}
+2025-05-15 13:29:12 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:30:12 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:30:18 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:30:19 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:30:21 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:30:21 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:30:21 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315821609, 'signature': '60d9397b7d199e8bafad5ac9c5f3ccfea0c1be9e684f0d23c9927547a7085687'}
+2025-05-15 13:30:21 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:31:22 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:31:27 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:31:27 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:31:29 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:31:29 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:31:29 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315889495, 'signature': '389e4ce6a357c5b8aea680a512e09f6b8cf0bcfcf7aaae5c0cc92b2d5cbe37ef'}
+2025-05-15 13:31:29 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:32:29 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:32:35 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:32:36 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:32:38 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:32:38 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:32:38 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747315958007, 'signature': 'd1013ae7e8b64a49b53f2321f42d1910e6c6215328e9a03a8a6f43cafa0276c9'}
+2025-05-15 13:32:38 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
+2025-05-15 13:33:38 | INFO | arb-bot | Database engine and session successfully initialized.
+2025-05-15 13:33:44 | INFO | arb-bot | TradeExecutor initialized for binance | DRY_RUN=False | EXECUTE_LIVE_ORDERS=False
+2025-05-15 13:33:44 | INFO | arb-bot | [BINANCE] Exchange info loaded.
+2025-05-15 13:33:46 | INFO | arb-bot | [DEVELOPMENT] Opportunity logged: ETH/USDC @ 0.81%
+2025-05-15 13:33:46 | INFO | arb-bot | Preparing to execute trade: buy 1.5 ETH/USDC @ 1850.0 on binance
+2025-05-15 13:33:46 | INFO | arb-bot | [PREVIEW] Binance order prepared: {'symbol': 'ETHUSDC', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 1.5, 'price': Decimal('1850.0'), 'recvWindow': 5000, 'timestamp': 1747316026679, 'signature': '2cf39d33d22df83a7125733d5ae9772c8647e846a2c470d2a126516d4190225f'}
+2025-05-15 13:33:46 | INFO | arb-bot | [PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.
