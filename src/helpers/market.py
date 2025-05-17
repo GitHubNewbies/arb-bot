@@ -1,38 +1,29 @@
-import logging
-from decimal import Decimal
-from src.trader import fetch_balance, fetch_precision, fetch_price
+from src.exchanges.binance import fetch_binance_price, calculate_binance_quantity
+from src.exchanges.bybit import fetch_bybit_price, calculate_bybit_quantity
 
-logger = logging.getLogger("arb-bot")
+def get_live_price(exchange, pair):
+    if exchange == "binance":
+        return fetch_binance_price(pair)
+    elif exchange == "bybit":
+        return fetch_bybit_price(pair)
+    else:
+        raise ValueError(f"Unsupported exchange: {exchange}")
 
-def get_live_price(exchange: str, pair: str) -> Decimal:
-    try:
-        return Decimal(str(fetch_price(exchange, pair)))
-    except Exception as e:
-        logger.error(f"Failed to fetch price for {pair} on {exchange}: {e}")
-        raise
+def get_trade_quantity(exchange, pair, price, side):
+    if exchange == "binance":
+        return calculate_binance_quantity(pair, price, side)
+    elif exchange == "bybit":
+        return calculate_bybit_quantity(pair, price, side)
+    else:
+        raise ValueError(f"Unsupported exchange: {exchange}")
 
-def get_trade_quantity(exchange: str, pair: str, price: Decimal, side: str) -> Decimal:
-    try:
-        balance = fetch_balance(exchange, side)
-        precision = fetch_precision(exchange, pair)
-
-        raw_qty = balance / price
-        factor = Decimal("1e-{0}".format(precision))
-        quantity = (raw_qty // factor) * factor
-        return quantity
-    except Exception as e:
-        logger.error(f"Failed to calculate trade quantity for {pair} on {exchange}: {e}")
-        raise
-
-def get_best_opportunity(pair: str) -> dict:
-    # Placeholder logic for live environment: this should be replaced with real strategy evaluation
-    # For now, assume all opportunities are on Binance and we BUY
-    try:
-        return {
-            "exchange": "binance",
-            "side": "BUY",
-            "price": float(fetch_price("binance", pair))
-        }
-    except Exception as e:
-        logger.warning(f"No opportunity available for {pair}: {e}")
-        return {}
+def get_best_opportunity(pair):
+    # Temporarily hardcoded to test both exchanges; improve with real logic later.
+    from random import choice
+    exchange = choice(["binance", "bybit"])
+    price = get_live_price(exchange, pair)
+    return {
+        "exchange": exchange,
+        "side": "BUY",
+        "price": price
+    }

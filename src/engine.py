@@ -1,7 +1,7 @@
 import logging
 from decimal import Decimal
+from src.utils import fetch_market_analysis
 from src.trader import execute_order
-from src.utils import get_live_price, get_trade_quantity, get_best_opportunity
 
 logger = logging.getLogger("arb-bot")
 
@@ -10,7 +10,7 @@ def scan_market(pairs: list, session):
 
     for pair in pairs:
         try:
-            opportunity = get_best_opportunity(pair)
+            opportunity = fetch_market_analysis(pair)
             if not opportunity:
                 logger.info(f"No arbitrage opportunity for {pair}")
                 continue
@@ -18,11 +18,10 @@ def scan_market(pairs: list, session):
             exchange = opportunity["exchange"]
             side = opportunity["side"]
             price = Decimal(str(opportunity["price"]))
-
-            quantity = get_trade_quantity(exchange, pair, price, side)
+            quantity = opportunity["quantity"]
 
             logger.info(f"Preparing to execute trade: {side} {quantity} {pair} @ {price} on {exchange}")
             execute_order(exchange, pair, side, quantity, price)
 
         except Exception as e:
-            logger.exception(f"Error scanning pair {pair} on exchange {exchange}")
+            logger.exception(f"Error scanning pair {pair}")

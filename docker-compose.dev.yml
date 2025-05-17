@@ -1,13 +1,16 @@
-version: '3.8'
+# version: '3.8'
 
 services:
   bot:
     build: .
     container_name: arb-bot-dev
     restart: always
+    env_file:
+      - .env
     environment:
       - APP_ENV=development
+      - PYTHONPATH=/app
     volumes:
       - .:/app
     working_dir: /app
-    command: ["python", "src/main.py"]
+    command: ["python", "-m", "src.main"]
