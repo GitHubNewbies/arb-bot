@@ -1,132 +1,113 @@
-# trader.py
-
 import os
 import time
-import requests
 import hmac
 import hashlib
-from urllib.parse import urlencode
-from src.logger import get_logger
+import requests
+import logging
+from decimal import Decimal
 
-logger = get_logger(__name__)
+logger = logging.getLogger("arb-bot")
 
-DRY_RUN = os.getenv("DRY_RUN", "True").lower() == "true"
-EXECUTE_LIVE_ORDERS = os.getenv("EXECUTE_LIVE_ORDERS", "False").lower() == "true"
-BINANCE_BASE = "https://api.binance.com"
-BYBIT_BASE = os.getenv("BYBIT_BASE", "https://api.bybit.com")
-BINANCE_KEY = os.getenv("BINANCE_API_KEY")
-BINANCE_SECRET = os.getenv("BINANCE_SECRET")
-BYBIT_KEY = os.getenv("BYBIT_API_KEY")
-BYBIT_SECRET = os.getenv("BYBIT_SECRET")
+BINANCE_API_KEY = os.getenv("BINANCE_API_KEY")
+BINANCE_API_SECRET = os.getenv("BINANCE_API_SECRET")
+BYBIT_API_KEY = os.getenv("BYBIT_API_KEY")
+BYBIT_API_SECRET = os.getenv("BYBIT_API_SECRET")
 
-class TradeExecutor:
-    def __init__(self, exchange_name):
-        self.exchange = exchange_name.lower()
-        self.filters = {}
-        logger.info(f"TradeExecutor initialized for {exchange_name} | DRY_RUN={DRY_RUN} | EXECUTE_LIVE_ORDERS={EXECUTE_LIVE_ORDERS}")
-        self.load_filters()
+# 🔍 TEMP DEBUG: Print to confirm if environment variables are loading
+print(f"🔍 DEBUG ENV CHECK: BINANCE_KEY={BINANCE_API_KEY} BINANCE_SECRET={BINANCE_API_SECRET} BYBIT_KEY={BYBIT_API_KEY} BYBIT_SECRET={BYBIT_API_SECRET}")
 
-    def load_filters(self):
+if not BINANCE_API_KEY or not BINANCE_API_SECRET:
+    logger.critical("❌ Binance API credentials are not set. Ensure BINANCE_API_KEY and BINANCE_API_SECRET are in environment.")
+    raise EnvironmentError("Missing Binance API credentials")
+if not BYBIT_API_KEY or not BYBIT_API_SECRET:
+    logger.critical("❌ Bybit API credentials are not set. Ensure BYBIT_API_KEY and BYBIT_API_SECRET are in environment.")
+    raise EnvironmentError("Missing Bybit API credentials")
+
+logger.info("🔐 Loaded Binance and Bybit credentials successfully.")
+
+def _sign_request(params: dict, secret: str) -> str:
+    query_string = "&".join([f"{key}={params[key]}" for key in sorted(params)])
+    return hmac.new(secret.encode('utf-8'), query_string.encode('utf-8'), hashlib.sha256).hexdigest()
+
+def _binance_order(symbol: str, side: str, quantity: Decimal, price: float):
+    url = "https://api.binance.com/api/v3/order"
+    timestamp = int(time.time() * 1000)
+    params = {
+        "symbol": symbol,
+        "side": side,
+        "type": "LIMIT",
+        "timeInForce": "GTC",
+        "quantity": str(quantity),
+        "price": str(price),
+        "recvWindow": 5000,
+        "timestamp": timestamp,
+    }
+    signature = _sign_request(params, BINANCE_API_SECRET)
+    params["signature"] = signature
+
+    headers = {
+        "X-MBX-APIKEY": BINANCE_API_KEY,
+    }
+
+    logger.info(f"[LIVE] Submitting order to Binance: {params}")
+
+    response = requests.post(url, headers=headers, params=params)
+
+    try:
+        response.raise_for_status()
+        logger.info("✅ Order successfully submitted to Binance.")
+    except requests.HTTPError as e:
+        logger.error("❌ Binance order failed with status %s", response.status_code)
         try:
-            if self.exchange == "binance":
-                r = requests.get(f"{BINANCE_BASE}/api/v3/exchangeInfo")
-                data = r.json()
-                self.filters = {
-                    s['symbol']: s['filters'] for s in data['symbols']
-                }
-                logger.info("[BINANCE] Exchange info loaded.")
-            elif self.exchange == "bybit":
-                r = requests.get(f"{BYBIT_BASE}/v5/market/instruments-info?category=spot")
-                data = r.json()
-                self.filters = {
-                    i['symbol']: i for i in data['result']['list']
-                }
-                logger.info("[BYBIT] Market info loaded.")
-        except Exception as e:
-            logger.exception(f"[ERROR] Failed to fetch exchange info for {self.exchange}")
+            error_json = response.json()
+            logger.error("❌ Binance error body: %s", error_json)
+        except Exception:
+            logger.warning("⚠️ Failed to parse Binance error response JSON")
+        raise
 
-    def is_trade_valid(self, pair, quantity, price):
-        symbol = pair.replace("/", "")
-        logger.debug(f"[VALIDATION] Checking trade validity for {pair} (symbol: {symbol}) | qty={quantity}, price={price}")
+def _bybit_order(symbol: str, side: str, quantity: Decimal, price: float):
+    url = "https://api.bybit.com/v5/order/create"
+    timestamp = str(int(time.time() * 1000))
+    params = {
+        "category": "spot",
+        "symbol": symbol,
+        "side": side.upper(),
+        "orderType": "LIMIT",
+        "qty": str(quantity),
+        "price": str(price),
+        "timeInForce": "GTC",
+        "timestamp": timestamp,
+        "apiKey": BYBIT_API_KEY,
+    }
+    # Build signature
+    param_string = "&".join(f"{k}={v}" for k, v in sorted(params.items()))
+    signature = hmac.new(BYBIT_API_SECRET.encode('utf-8'), param_string.encode('utf-8'), hashlib.sha256).hexdigest()
+    params["sign"] = signature
 
-        if self.exchange == "binance" and symbol in self.filters:
-            try:
-                filters = self.filters[symbol]
-                notional_entry = next((f for f in filters if f['filterType'] in ['MIN_NOTIONAL', 'NOTIONAL']), None)
-                if not notional_entry:
-                    logger.warning(f"[FILTER] No notional filter found for {symbol}. Available filters: {[f['filterType'] for f in filters]}")
-                    return False
+    headers = {
+        "Content-Type": "application/json"
+    }
 
-                min_notional = float(notional_entry.get('minNotional') or notional_entry.get('minNotional', 0))
-                notional = float(price) * float(quantity)
-                logger.debug(f"[FILTER] Calculated notional: {notional:.4f}, Min required: {min_notional}")
-                if notional < min_notional:
-                    logger.warning(f"[FILTER] REJECTED: {pair} notional {notional:.4f} < required {min_notional}")
-                    return False
-            except Exception as e:
-                logger.warning(f"[FILTER] Could not evaluate Binance filters for {symbol}: {e}")
-                return False
+    logger.info(f"[LIVE] Submitting order to Bybit: {params}")
 
-        elif self.exchange == "bybit" and symbol in self.filters:
-            try:
-                min_qty = float(self.filters[symbol]['lotSizeFilter']['minOrderQty'])
-                logger.debug(f"[FILTER] Bybit minimum quantity: {min_qty}, Proposed: {quantity}")
-                if float(quantity) < min_qty:
-                    logger.warning(f"[FILTER] REJECTED: {pair} quantity {quantity} < min required {min_qty}")
-                    return False
-            except Exception as e:
-                logger.warning(f"[FILTER] Could not evaluate Bybit filters for {symbol}: {e}")
-                return False
+    response = requests.post(url, headers=headers, json=params)
 
-        logger.info(f"[VALIDATION] Trade accepted for {pair} | qty={quantity}, price={price}")
-        return True
-
-    def execute_trade(self, pair, side, quantity, price):
-        logger.info(f"Preparing to execute trade: {side} {quantity} {pair} @ {price} on {self.exchange}")
-
-        if not self.is_trade_valid(pair, quantity, price):
-            logger.warning(f"[EXECUTION] Trade rejected after validation: {pair} | qty={quantity}, price={price}")
-            return {"status": "filtered", "exchange": self.exchange, "pair": pair}
-
-        if DRY_RUN:
-            logger.info(f"[DRY_RUN] Simulated {side} {quantity} {pair} @ {price} on {self.exchange}")
-            return {"status": "simulated", "exchange": self.exchange, "pair": pair}
-
-        symbol = pair.replace("/", "")
-        if self.exchange == "binance":
-            if not EXECUTE_LIVE_ORDERS:
-                return self.preview_binance_order(symbol, side, quantity, price)
-            else:
-                return self.binance_place_order(symbol, side, quantity, price)
-
-        elif self.exchange == "bybit":
-            if not EXECUTE_LIVE_ORDERS:
-                return self.preview_bybit_order(symbol, side, quantity, price)
-            else:
-                return self.bybit_place_order(symbol, side, quantity, price)
-
-        logger.warning(f"[EXECUTION] Unknown exchange: {self.exchange}. Cannot proceed with trade.")
-        return {"status": "skipped", "exchange": self.exchange, "pair": pair}
-
-    def preview_binance_order(self, symbol, side, quantity, price):
+    try:
+        response.raise_for_status()
+        logger.info("✅ Order successfully submitted to Bybit.")
+    except requests.HTTPError as e:
+        logger.error("❌ Bybit order failed with status %s", response.status_code)
         try:
-            timestamp = int(time.time() * 1000)
-            params = {
-                "symbol": symbol,
-                "side": side.upper(),
-                "type": "LIMIT",
-                "timeInForce": "GTC",
-                "quantity": quantity,
-                "price": price,
-                "recvWindow": 5000,
-                "timestamp": timestamp
-            }
-            query_string = urlencode(params)
-            signature = hmac.new(BINANCE_SECRET.encode('utf-8'), query_string.encode('utf-8'), hashlib.sha256).hexdigest()
-            params["signature"] = signature
-            logger.info(f"[PREVIEW] Binance order prepared: {params}")
-            logger.info(f"[PREVIEW] If EXECUTE_LIVE_ORDERS=True, this order would now be submitted to Binance.")
-            return {"status": "previewed", "params": params}
-        except Exception as e:
-            logger.exception(f"[ERROR] Failed to prepare Binance order for {symbol}")
-            return {"status": "error", "reason": str(e)}
+            error_json = response.json()
+            logger.error("❌ Bybit error body: %s", error_json)
+        except Exception:
+            logger.warning("⚠️ Failed to parse Bybit error response JSON")
+        raise
+
+def execute_order(exchange: str, symbol: str, side: str, quantity: Decimal, price: float):
+    if exchange.lower() == "binance":
+        _binance_order(symbol, side, quantity, price)
+    elif exchange.lower() == "bybit":
+        _bybit_order(symbol, side, quantity, price)
+    else:
+        raise ValueError(f"Unsupported exchange: {exchange}")

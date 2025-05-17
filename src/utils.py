@@ -1,7 +1,7 @@
 import logging
 from decimal import Decimal
 from src.trader import execute_order
-from src.utils import get_live_price, get_trade_quantity, get_best_opportunity
+from src.helpers.market import get_live_price, get_trade_quantity, get_best_opportunity
 
 logger = logging.getLogger("arb-bot")
 
@@ -10,6 +10,7 @@ def scan_market(pairs: list, session):
 
     for pair in pairs:
         try:
+            # Dynamically evaluate the best trading opportunity
             opportunity = get_best_opportunity(pair)
             if not opportunity:
                 logger.info(f"No arbitrage opportunity for {pair}")
@@ -19,6 +20,7 @@ def scan_market(pairs: list, session):
             side = opportunity["side"]
             price = Decimal(str(opportunity["price"]))
 
+            # Calculate trade quantity using balance, precision, and strategy logic
             quantity = get_trade_quantity(exchange, pair, price, side)
 
             logger.info(f"Preparing to execute trade: {side} {quantity} {pair} @ {price} on {exchange}")

@@ -1,23 +1,31 @@
-import sys
-import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../')
-
-from src.config import APP_ENV
-from src.models import Base
-from src.db import engine
+import logging
 from src.engine import scan_market
+from src.db import ensure_tables_exist, get_session
 
-
-def init_db():
-    print("[INIT] Creating tables if they don't exist...")
-    Base.metadata.create_all(bind=engine)
-
+def setup_logging():
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+    )
+    logging.getLogger("arb-bot").info("Logging is set up.")
 
 def main():
-    print(f"[{APP_ENV.upper()}] Starting bot...")
-    scan_market()
+    setup_logging()
 
+    # Ensure DB schema is ready
+    ensure_tables_exist()
+
+    # Define trading pairs
+    pairs = ["ETHUSDC", "BTCUSDT", "WIFUSDC"]
+
+    # Create DB session
+    session = get_session()
+
+    try:
+        # Run live market scan
+        scan_market(pairs, session)
+    finally:
+        session.close()
 
 if __name__ == "__main__":
-    init_db()
     main()
