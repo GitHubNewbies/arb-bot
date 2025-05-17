@@ -1,42 +1,38 @@
+# src/helpers/market.py
+
 import logging
 from decimal import Decimal
-
-from src.exchanges.binance import fetch_binance_price, calculate_binance_quantity
-from src.exchanges.bybit import fetch_bybit_price, calculate_bybit_quantity
+from src.exchanges.registry import get_exchange_adapter
 
 logger = logging.getLogger("arb-bot")
 
-
 def get_live_price(exchange: str, pair: str) -> Decimal:
-    if exchange == "binance":
-        return fetch_binance_price(pair)
-    elif exchange == "bybit":
-        return fetch_bybit_price(pair)
-    else:
-        raise ValueError(f"❌ Unsupported exchange: {exchange}")
-
+    try:
+        adapter = get_exchange_adapter(exchange)
+        return adapter.fetch_price(pair)
+    except Exception as e:
+        logger.error(f"❌ Failed to fetch price for {pair} on {exchange}: {e}", exc_info=True)
+        return Decimal("0")
 
 def get_trade_quantity(exchange: str, pair: str, price: Decimal, side: str) -> Decimal:
-    if exchange == "binance":
-        return calculate_binance_quantity(pair, price, side)
-    elif exchange == "bybit":
-        return calculate_bybit_quantity(pair, price, side)
-    else:
-        raise ValueError(f"❌ Unsupported exchange: {exchange}")
-
+    try:
+        adapter = get_exchange_adapter(exchange)
+        return adapter.calculate_quantity(pair, price, side)
+    except Exception as e:
+        logger.error(f"❌ Trade quantity error for {pair} on {exchange} ({side}): {e}", exc_info=True)
+        return Decimal("0")
 
 def get_best_opportunity(pair: str) -> dict | None:
     try:
-        binance_price = fetch_binance_price(pair)
-        bybit_price = fetch_bybit_price(pair)
+        binance_price = get_live_price("binance", pair)
+        bybit_price = get_live_price("bybit", pair)
 
-        if not binance_price or not bybit_price:
-            logger.warning(f"Missing prices for {pair}")
+        if binance_price <= 0 or bybit_price <= 0:
+            logger.warning(f"⚠️ Skipping {pair} due to missing price data")
             return None
 
         opportunities = []
 
-        # Option 1: Buy on Binance, Sell on Bybit
         if bybit_price > binance_price:
             spread = ((bybit_price - binance_price) / binance_price) * 100
             opportunities.append({
@@ -49,7 +45,6 @@ def get_best_opportunity(pair: str) -> dict | None:
                 "exchange": "binance",
             })
 
-        # Option 2: Buy on Bybit, Sell on Binance
         if binance_price > bybit_price:
             spread = ((binance_price - bybit_price) / bybit_price) * 100
             opportunities.append({
@@ -74,5 +69,5 @@ def get_best_opportunity(pair: str) -> dict | None:
         return best
 
     except Exception as e:
-        logger.exception(f"Failed to evaluate spread for {pair}")
+        logger.exception(f"❌ Failed to evaluate spread for {pair}")
         return None

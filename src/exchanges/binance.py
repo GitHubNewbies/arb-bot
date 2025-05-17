@@ -1,57 +1,84 @@
 import os
-import time
-import hmac
-import hashlib
 import requests
-from decimal import Decimal
-from dotenv import load_dotenv
+import logging
+from decimal import Decimal, ROUND_DOWN
+from src.utils.auth import sign_request
 
-load_dotenv()
+logger = logging.getLogger("arb-bot")
+BINANCE_BASE_URL = "https://api.binance.com"
 
-BINANCE_API_KEY = os.getenv("BINANCE_API_KEY")
-BINANCE_API_SECRET = os.getenv("BINANCE_API_SECRET")
+class BinanceAdapter:
+    def fetch_price(self, pair: str) -> Decimal:
+        symbol = pair.replace("/", "")
+        url = f"{BINANCE_BASE_URL}/api/v3/ticker/price?symbol={symbol}"
+        response = requests.get(url)
+        response.raise_for_status()
+        return Decimal(response.json()["price"])
 
-if not BINANCE_API_KEY or not BINANCE_API_SECRET:
-    raise EnvironmentError("❌ Missing Binance API credentials. Check .env or environment variables.")
+    def calculate_quantity(self, pair: str, price: Decimal, side: str) -> Decimal:
+        symbol = pair.replace("/", "")
+        api_key = os.getenv("BINANCE_API_KEY")
+        api_secret = os.getenv("BINANCE_API_SECRET")
+        endpoint = "/sapi/v1/margin/account"
 
-def fetch_binance_price(pair: str) -> Decimal:
-    url = f"https://api.binance.com/api/v3/ticker/price?symbol={pair}"
-    response = requests.get(url)
-    response.raise_for_status()
-    return Decimal(response.json()["price"])
+        headers, signed_params = sign_request(
+            endpoint=endpoint,
+            method="GET",
+            api_key=api_key,
+            api_secret=api_secret,
+            params={}
+        )
 
-def get_binance_precision(pair: str) -> int:
-    url = "https://api.binance.com/api/v3/exchangeInfo"
-    response = requests.get(url)
-    response.raise_for_status()
-    symbols = response.json()["symbols"]
-    for s in symbols:
-        if s["symbol"] == pair:
-            for f in s["filters"]:
-                if f["filterType"] == "LOT_SIZE":
-                    step_size = Decimal(f["stepSize"])
-                    return abs(step_size.as_tuple().exponent)
-    raise ValueError(f"❌ Could not determine precision for {pair}")
+        response = requests.get(BINANCE_BASE_URL + endpoint, headers=headers, params=signed_params)
+        response.raise_for_status()
 
-def calculate_binance_quantity(pair: str, price: Decimal, side: str) -> Decimal:
-    timestamp = str(int(time.time() * 1000))
-    query = f"recvWindow=5000&timestamp={timestamp}"
-    signature = hmac.new(BINANCE_API_SECRET.encode(), query.encode(), hashlib.sha256).hexdigest()
+        balances = response.json().get("userAssets", [])
+        asset = symbol.replace("USDC", "") if side == "BUY" else "USDC"
+        entry = next((b for b in balances if b["asset"] == asset), None)
 
-    url = f"https://api.binance.com/api/v3/account?{query}&signature={signature}"
-    headers = {"X-MBX-APIKEY": BINANCE_API_KEY}
-    resp = requests.get(url, headers=headers)
-    resp.raise_for_status()
+        if not entry:
+            raise ValueError(f"❌ No margin balance for asset {asset}")
 
-    balances = resp.json().get("balances", [])
-    asset = pair.replace("USDT", "").replace("USDC", "") if side == "BUY" else "USDT"
-    asset_balance = next((b for b in balances if b["asset"] == asset), None)
-    available = Decimal(asset_balance["free"]) if asset_balance else Decimal("0")
+        free_balance = Decimal(entry["free"])
+        quantity = (free_balance / price).quantize(Decimal("0.000001"), rounding=ROUND_DOWN)
 
-    precision = get_binance_precision(pair)
-    if side == "BUY":
-        qty = available / price
-    else:
-        qty = available
+        if quantity <= 0:
+            logger.warning(f"⚠️ Computed quantity too low for {pair} | Balance: {free_balance}, Price: {price}")
+            return Decimal("0")
 
-    return qty.quantize(Decimal(f"1e-{precision}"))
+        return quantity
+
+    def place_order(self, pair: str, quantity: Decimal, price: Decimal, side: str) -> dict:
+        symbol = pair.replace("/", "")
+        api_key = os.getenv("BINANCE_API_KEY")
+        api_secret = os.getenv("BINANCE_API_SECRET")
+        endpoint = "/sapi/v1/margin/order"
+
+        params = {
+            "symbol": symbol,
+            "side": side.upper(),
+            "type": "LIMIT",
+            "timeInForce": "GTC",
+            "quantity": str(quantity.normalize()),
+            "price": str(price.normalize()),
+            "recvWindow": 5000,
+        }
+
+        headers, signed_params = sign_request(
+            endpoint=endpoint,
+            method="POST",
+            api_key=api_key,
+            api_secret=api_secret,
+            params=params,
+        )
+
+        logger.info(f"[LIVE] Submitting margin order to Binance: {signed_params}")
+        response = requests.post(BINANCE_BASE_URL + endpoint, headers=headers, params=signed_params)
+
+        try:
+            response.raise_for_status()
+            logger.info(f"✅ Binance order placed: {response.json()}")
+            return response.json()
+        except requests.RequestException:
+            logger.error(f"❌ Binance error: {response.status_code} - {response.text}")
+            raise

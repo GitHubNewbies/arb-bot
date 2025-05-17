@@ -1,4 +1,7 @@
+import os
 import logging
+from dotenv import load_dotenv
+
 from src.engine import scan_market
 from src.db import ensure_tables_exist, get_session
 
@@ -9,14 +12,22 @@ def setup_logging():
     )
     logging.getLogger("arb-bot").info("Logging is set up.")
 
+def get_env_pairs():
+    raw = os.getenv("PAIRS", "")
+    if not raw:
+        logging.getLogger("arb-bot").warning("⚠️ No PAIRS found in .env. Defaulting to ETHUSDC,BTCUSDT,WIFUSDC.")
+        return ["ETHUSDC", "BTCUSDT", "WIFUSDC"]
+    return [pair.strip().upper() for pair in raw.split(",") if pair.strip()]
+
 def main():
+    load_dotenv()
     setup_logging()
 
     # Ensure DB schema is ready
     ensure_tables_exist()
 
-    # Define trading pairs
-    pairs = ["ETHUSDC", "BTCUSDT", "WIFUSDC"]
+    # Dynamically load trading pairs from .env
+    pairs = get_env_pairs()
 
     # Create DB session
     session = get_session()

@@ -3,66 +3,90 @@ import time
 import hmac
 import hashlib
 import requests
-from decimal import Decimal
-from dotenv import load_dotenv
+import logging
+from decimal import Decimal, ROUND_DOWN
 
-load_dotenv()
+logger = logging.getLogger("arb-bot")
+BYBIT_BASE_URL = "https://api.bybit.com"
 
-BYBIT_API_KEY = os.getenv("BYBIT_API_KEY")
-BYBIT_API_SECRET = os.getenv("BYBIT_API_SECRET")
+class BybitAdapter:
+    def fetch_price(self, pair: str) -> Decimal:
+        symbol = pair.replace("/", "")
+        url = f"{BYBIT_BASE_URL}/v5/market/tickers?category=linear&symbol={symbol}"
+        response = requests.get(url)
+        response.raise_for_status()
+        tickers = response.json().get("result", {}).get("list", [])
+        if not tickers:
+            raise ValueError(f"❌ No price data for {symbol}")
+        return Decimal(tickers[0]["lastPrice"])
 
-if not BYBIT_API_KEY or not BYBIT_API_SECRET:
-    raise EnvironmentError("❌ Missing Bybit API credentials. Check .env or environment variables.")
+    def calculate_quantity(self, pair: str, price: Decimal, side: str) -> Decimal:
+        api_key = os.getenv("BYBIT_API_KEY")
+        api_secret = os.getenv("BYBIT_API_SECRET")
+        symbol = pair.replace("/", "")
+        url = f"{BYBIT_BASE_URL}/v5/account/wallet-balance?accountType=UNIFIED"
+        timestamp = str(int(time.time() * 1000))
 
-def fetch_bybit_price(pair: str) -> Decimal:
-    url = f"https://api.bybit.com/v5/market/tickers?category=spot&symbol={pair}"
-    response = requests.get(url)
-    response.raise_for_status()
+        params = {"apiKey": api_key, "timestamp": timestamp}
+        query = "&".join(f"{k}={v}" for k, v in sorted(params.items()))
+        signature = hmac.new(api_secret.encode(), query.encode(), hashlib.sha256).hexdigest()
 
-    tickers = response.json().get("result", {}).get("list", [])
-    if not tickers:
-        raise ValueError(f"No ticker data found for {pair} on Bybit.")
-    
-    return Decimal(tickers[0]["lastPrice"])
+        headers = {"X-BAPI-API-KEY": api_key, "X-BAPI-SIGN": signature, "X-BAPI-TIMESTAMP": timestamp}
+        response = requests.get(url, headers=headers, params={})
+        response.raise_for_status()
 
+        balances = response.json()["result"]["list"][0]["coin"]
+        asset = symbol.replace("USDC", "") if side == "BUY" else "USDC"
+        entry = next((c for c in balances if c["coin"] == asset), None)
 
-def calculate_bybit_quantity(pair: str, price: Decimal, side: str) -> Decimal:
-    endpoint = "/v5/account/wallet-balance"
-    timestamp = str(int(time.time() * 1000))
-    recv_window = "5000"
-    query = f"accountType=UNIFIED&api_key={BYBIT_API_KEY}&recvWindow={recv_window}&timestamp={timestamp}"
-    signature = hmac.new(
-        BYBIT_API_SECRET.encode(),
-        query.encode(),
-        hashlib.sha256
-    ).hexdigest()
+        if not entry:
+            raise ValueError(f"❌ No Bybit balance for {asset}")
 
-    url = f"https://api.bybit.com{endpoint}?{query}&sign={signature}"
-    headers = {"X-BYBIT-API-KEY": BYBIT_API_KEY}
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()
+        free = Decimal(entry["availableToWithdraw"])
+        quantity = (free / price).quantize(Decimal("0.000001"), rounding=ROUND_DOWN)
 
-    json_data = response.json()
+        if quantity <= 0:
+            logger.warning(f"⚠️ Computed quantity too low for {pair} | Balance: {free}, Price: {price}")
+            return Decimal("0")
 
-    # 🪵 Optional debug
-    print("[DEBUG] Bybit wallet response:", json_data)
+        return quantity
 
-    result = json_data.get("result", {})
-    wallet_list = result.get("list", [])
+    def place_order(self, pair: str, quantity: Decimal, price: Decimal, side: str) -> dict:
+        api_key = os.getenv("BYBIT_API_KEY")
+        api_secret = os.getenv("BYBIT_API_SECRET")
+        symbol = pair.replace("/", "")
+        endpoint = "/v5/order/create"
+        url = BYBIT_BASE_URL + endpoint
 
-    if not wallet_list:
-        raise ValueError("❌ Bybit wallet response missing or empty. Check API permissions or account status.")
+        params = {
+            "category": "linear",
+            "symbol": symbol,
+            "side": side.upper(),
+            "orderType": "Limit",
+            "qty": str(quantity),
+            "price": str(price),
+            "timeInForce": "GTC",
+        }
 
-    coins = wallet_list[0].get("coin", [])
-    asset = pair.replace("USDT", "") if side == "SELL" else "USDT"
+        timestamp = str(int(time.time() * 1000))
+        params_str = "&".join(f"{k}={v}" for k, v in sorted(params.items()))
+        signed_str = f"{timestamp}{api_key}5000{params_str}"
+        signature = hmac.new(api_secret.encode(), signed_str.encode(), hashlib.sha256).hexdigest()
 
-    asset_data = next((c for c in coins if c["coin"] == asset), None)
-    if not asset_data:
-        raise ValueError(f"❌ Asset {asset} not found in wallet.")
+        headers = {
+            "X-BAPI-API-KEY": api_key,
+            "X-BAPI-TIMESTAMP": timestamp,
+            "X-BAPI-SIGN": signature,
+            "Content-Type": "application/json",
+        }
 
-    available = Decimal(asset_data["availableToWithdraw"])
+        logger.info(f"[LIVE] Submitting order to Bybit: {params}")
+        response = requests.post(url, headers=headers, json=params)
 
-    if side == "BUY":
-        return (available / price).quantize(Decimal("0.0001"))
-    else:
-        return available.quantize(Decimal("0.0001"))
+        try:
+            response.raise_for_status()
+            logger.info(f"✅ Bybit order placed: {response.json()}")
+            return response.json()
+        except requests.RequestException:
+            logger.error(f"❌ Bybit order failed: {response.status_code} - {response.text}")
+            raise
