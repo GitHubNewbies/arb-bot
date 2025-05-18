@@ -4,112 +4,91 @@ import hmac
 import hashlib
 import requests
 import logging
-from decimal import Decimal
+from typing import Dict, Any, List
 
-BYBIT_BASE_URL = "https://api.bybit.com"
-logger = logging.getLogger("arb-bot")
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BYBIT_API_KEY = os.getenv("BYBIT_API_KEY")
 BYBIT_API_SECRET = os.getenv("BYBIT_API_SECRET")
 
 
 class BybitAdapter:
-    def fetch_price(self, pair: str) -> Decimal:
-        """
-        Fetches the current spot price for a given pair from Bybit.
-        Input: 'SOL/USDC' ➜ matched as 'SOLUSDC' from ticker list.
-        """
-        url = f"{BYBIT_BASE_URL}/v5/market/tickers?category=spot"
-        response = requests.get(url)
-        response.raise_for_status()
+    def __init__(self):
+        self.base_url = "https://api.bybit.com"
+        self.api_key = BYBIT_API_KEY
+        self.api_secret = BYBIT_API_SECRET
 
-        data = response.json()
-        if data.get("retCode") != 0:
-            raise ValueError(f"❌ Bybit API error: {data.get('retMsg', 'Unknown error')}")
+    def _sign(self, params: Dict[str, Any]) -> str:
+        """Generate HMAC-SHA256 signature for Bybit API."""
+        query_string = "&".join([f"{k}={v}" for k, v in sorted(params.items())])
+        return hmac.new(
+            self.api_secret.encode("utf-8"),
+            query_string.encode("utf-8"),
+            hashlib.sha256
+        ).hexdigest()
 
-        symbol = pair.replace("/", "")
-        ticker_list = data["result"]["list"]
-        match = next((t for t in ticker_list if t["symbol"] == symbol), None)
+    def _headers(self) -> Dict[str, str]:
+        return {
+            "Content-Type": "application/json",
+            "X-BYBIT-API-KEY": self.api_key,
+        }
 
-        if not match:
-            raise ValueError(f"❌ No price data for {pair}")
-
-        return Decimal(match["lastPrice"])
-
-    def calculate_quantity(self, pair: str, price: Decimal, side: str) -> Decimal:
-        """
-        Fetches the USDC balance and calculates how much of the asset we can buy.
-        Margin assumed available in Unified account.
-        """
-        endpoint = "/v5/account/wallet-balance"
-        timestamp = str(int(time.time() * 1000))
-        recv_window = "5000"
-
+    def fetch_tradable_pairs(self) -> List[str]:
+        """Fetch tradable spot pairs from Bybit."""
+        endpoint = "/v5/market/instruments-info"
+        url = f"{self.base_url}{endpoint}"
         params = {
-            "accountType": "UNIFIED",
-            "timestamp": timestamp,
-            "apiKey": BYBIT_API_KEY,
-            "recvWindow": recv_window,
+            "category": "spot"
         }
 
-        # Sign the parameters
-        param_string = "&".join(f"{k}={v}" for k, v in sorted(params.items()))
-        signature = hmac.new(BYBIT_API_SECRET.encode(), param_string.encode(), hashlib.sha256).hexdigest()
-        headers = {"Content-Type": "application/json"}
-        params["sign"] = signature
-
-        url = f"{BYBIT_BASE_URL}{endpoint}"
-        response = requests.get(url, params=params, headers=headers)
-        response.raise_for_status()
-        balances = response.json()["result"]["list"][0]["coin"]
-
-        usdc_entry = next((item for item in balances if item["coin"] == "USDC"), None)
-        if not usdc_entry:
-            raise ValueError("❌ No USDC balance found")
-
-        free_balance = Decimal(usdc_entry["availableToWithdraw"])
-        quantity = (free_balance / price).quantize(Decimal("0.000001"))
-
-        if quantity <= 0:
-            logger.warning(f"⚠️ Computed quantity too low for {pair} | Balance: {free_balance}, Price: {price}")
-            return Decimal("0")
-
-        return quantity
-
-    def place_order(self, pair: str, quantity: Decimal, price: Decimal, side: str) -> dict:
-        """
-        Place a margin order via Bybit Unified account.
-        """
-        symbol = pair.replace("/", "")
-        endpoint = "/v5/order/create"
-        timestamp = str(int(time.time() * 1000))
-
-        order = {
-            "category": "linear",
-            "symbol": symbol,
-            "side": side.upper(),
-            "orderType": "Limit",
-            "qty": str(quantity),
-            "price": str(price),
-            "timeInForce": "GTC",
-            "isLeverage": "1",
-            "timestamp": timestamp,
-            "apiKey": BYBIT_API_KEY,
-        }
-
-        param_string = "&".join(f"{k}={v}" for k, v in sorted(order.items()))
-        signature = hmac.new(BYBIT_API_SECRET.encode(), param_string.encode(), hashlib.sha256).hexdigest()
-        order["sign"] = signature
-
-        headers = {"Content-Type": "application/json"}
-
-        logger.info(f"[LIVE] Submitting Bybit order: {order}")
-        response = requests.post(f"{BYBIT_BASE_URL}{endpoint}", json=order, headers=headers)
         try:
+            response = requests.get(url, params=params, timeout=10)
             response.raise_for_status()
-        except requests.exceptions.HTTPError as e:
-            logger.error(f"❌ Bybit order failed: {response.text}")
-            raise
+            data = response.json()
 
-        logger.info(f"✅ Bybit order placed: {response.json()}")
-        return response.json()
+            pairs = []
+            if "result" in data and "list" in data["result"]:
+                for item in data["result"]["list"]:
+                    if item.get("status") == "Trading":
+                        pairs.append(item["symbol"])  # e.g. "ETHUSDC"
+
+            return pairs
+
+        except Exception as e:
+            logging.error(f"❌ Failed to fetch Bybit tradable pairs: {e}")
+            return []
+
+    def fetch_price(self, symbol: str) -> float:
+        """Fetch current spot price for a symbol from Bybit v5"""
+        endpoint = "/v5/market/tickers"
+        url = f"{self.base_url}{endpoint}"
+        market_symbol = symbol.replace("/", "")
+        params = {
+            "category": "spot",
+            "symbol": market_symbol,
+        }
+
+        try:
+            response = requests.get(url, params=params, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+
+            if "result" in data and "list" in data["result"] and data["result"]["list"]:
+                return float(data["result"]["list"][0]["lastPrice"])
+
+            logging.error(f"❌ Unexpected response format for {symbol}: {data}")
+            return 0.0
+
+        except Exception as e:
+            logging.error(f"❌ Failed to fetch price for {symbol} on Bybit: {e}")
+            return 0.0
+
+    def calculate_quantity(self, balance: float, price: float, precision: int = 4) -> float:
+        try:
+            raw_qty = float(balance) / float(price)
+            return round(raw_qty, precision)
+        except Exception as e:
+            logging.error(f"❌ Error calculating quantity: {e}")
+            return 0.0

@@ -1,17 +1,26 @@
-from sqlalchemy import Column, Integer, String, Numeric, DateTime
-from sqlalchemy.ext.declarative import declarative_base
-from datetime import datetime
+# src/database.py
+
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, declarative_base, Session
+from src.models import TradeLog  # Ensure all models are imported
+
+import os
 
 Base = declarative_base()
 
-class Trade(Base):
-    __tablename__ = "trades"
+# Example: postgresql://user:password@host/dbname
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///trades.db")
 
-    id = Column(Integer, primary_key=True, index=True)
-    exchange = Column(String, nullable=False)
-    pair = Column(String, nullable=False)
-    side = Column(String, nullable=False)
-    quantity = Column(Numeric, nullable=False)
-    price = Column(Numeric, nullable=False)
-    timestamp = Column(DateTime, default=datetime.utcnow)
-    status = Column(String, default="submitted")
+# Set up the database engine and session factory
+engine = create_engine(DATABASE_URL, echo=False, future=True)
+SessionLocal = sessionmaker(bind=engine, class_=Session, expire_on_commit=False)
+
+
+def get_db_session() -> Session:
+    """Returns a new SQLAlchemy session."""
+    return SessionLocal()
+
+
+def create_all_tables():
+    """Ensures all DB tables are created."""
+    Base.metadata.create_all(bind=engine)

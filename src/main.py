@@ -1,23 +1,28 @@
-import os
 import logging
-from dotenv import load_dotenv
-from src.database import get_session, create_all_tables
+from src.utils.logging import setup_logging
+from src.database import create_all_tables, get_db_session
+from src.exchanges.discovery import get_common_pairs
 from src.engine import scan_market
-from src.utils.pairs import get_common_usdc_pairs
 
 def main():
-    load_dotenv()
-    logging.basicConfig(level=logging.INFO)
+    setup_logging()
     logger = logging.getLogger("arb-bot")
-    logger.info("🟢 Logging is set up.")
 
-    session = get_session()
-    create_all_tables(session)
+    try:
+        logger.info("🟢 Logging is set up.")
+        create_all_tables()
 
-    pairs = get_common_usdc_pairs()
-    logger.info(f"📦 Common tradable USDC pairs: {pairs}")
+        pairs = get_common_pairs()
+        if not pairs:
+            logger.warning("⚠️ No common trading pairs found — exiting.")
+            return
 
-    scan_market(pairs, session)
+        session = get_db_session()
+        logger.info(f"📊 Starting market scan for {len(pairs)} pairs")
+        scan_market(pairs, session)
+
+    except Exception as e:
+        logger.exception("❌ Unhandled error in main execution loop")
 
 if __name__ == "__main__":
     main()

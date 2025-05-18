@@ -1,28 +1,56 @@
 import logging
 from decimal import Decimal
-from sqlalchemy.orm import Session
 from src.helpers.market import get_live_price, get_trade_quantity
-from src.exchanges.registry import get_exchange_adapter
 from src.trader import execute_order
+from src.database import get_db_session
+from src.models import TradeLog
 
 logger = logging.getLogger("arb-bot")
 
-def scan_market(pairs: list[str], session: Session):
-    logger.info(f"📊 Starting market scan for {len(pairs)} pairs")
-    for pair in pairs:
-        for exchange in ["binance", "bybit"]:
-            try:
-                adapter = get_exchange_adapter(exchange)
-                price = get_live_price(pair, exchange)
-                quantity = get_trade_quantity(pair, price, exchange, "BUY")
+EXCHANGES = ["binance", "bybit"]
 
-                if quantity <= 0:
-                    logger.warning(f"⚠️ Computed quantity too low for {pair} | Balance: {quantity}, Price: {price}")
-                    logger.warning(f"⚠️ Skipping {pair} on {exchange}: quantity is zero.")
+def scan_market(pairs: list[str], session):
+    for pair in pairs:
+        logger.info(f"🔍 Scanning {pair}")
+        try:
+            prices = {}
+            quantities = {}
+
+            for exchange in EXCHANGES:
+                try:
+                    price = get_live_price(exchange, pair)
+                    quantity = get_trade_quantity(exchange, pair, price, "BUY")
+                    if quantity > 0:
+                        prices[exchange] = price
+                        quantities[exchange] = quantity
+                    else:
+                        logger.warning(f"⚠️ Skipping {pair} on {exchange}: quantity is zero.")
+                except Exception:
                     continue
 
-                logger.info(f"📈 {exchange.upper()} {pair} → Price: {price}, Qty: {quantity}")
-                execute_order(exchange, pair, "BUY", quantity, price)
-            except Exception as e:
-                logger.error(f"❌ Failed to fetch price for {pair} on {exchange}: {e}")
-                logger.warning(f"⚠️ Invalid price data for {pair} — skipping")
+            if len(prices) == 2:
+                binance_price = prices["binance"]
+                bybit_price = prices["bybit"]
+
+                if bybit_price > binance_price * Decimal("1.005"):
+                    logger.info(f"💰 Arbitrage opp: BUY on binance at {binance_price}, SELL on bybit at {bybit_price}")
+                    execute_order("binance", pair, "BUY", quantities["binance"], binance_price)
+                    execute_order("bybit", pair, "SELL", quantities["bybit"], bybit_price)
+
+                    for exchange in EXCHANGES:
+                        log = TradeLog(
+                            exchange=exchange,
+                            symbol=pair,
+                            side="BUY" if exchange == "binance" else "SELL",
+                            quantity=quantities[exchange],
+                            price=prices[exchange],
+                            status="executed",
+                        )
+                        session.add(log)
+
+                    session.commit()
+                else:
+                    logger.info(f"ℹ️ No arbitrage opportunity for {pair}")
+
+        except Exception as e:
+            logger.error(f"❌ Error scanning pair {pair}: {e}")
