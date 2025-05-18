@@ -1,42 +1,23 @@
 import os
 import logging
 from dotenv import load_dotenv
-
+from src.database import get_session, create_all_tables
 from src.engine import scan_market
-from src.db import ensure_tables_exist, get_session
-
-def setup_logging():
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
-    )
-    logging.getLogger("arb-bot").info("Logging is set up.")
-
-def get_env_pairs():
-    raw = os.getenv("PAIRS", "")
-    if not raw:
-        logging.getLogger("arb-bot").warning("⚠️ No PAIRS found in .env. Defaulting to ETHUSDC,BTCUSDT,WIFUSDC.")
-        return ["ETHUSDC", "BTCUSDT", "WIFUSDC"]
-    return [pair.strip().upper() for pair in raw.split(",") if pair.strip()]
+from src.utils.pairs import get_common_usdc_pairs
 
 def main():
     load_dotenv()
-    setup_logging()
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger("arb-bot")
+    logger.info("🟢 Logging is set up.")
 
-    # Ensure DB schema is ready
-    ensure_tables_exist()
-
-    # Dynamically load trading pairs from .env
-    pairs = get_env_pairs()
-
-    # Create DB session
     session = get_session()
+    create_all_tables(session)
 
-    try:
-        # Run live market scan
-        scan_market(pairs, session)
-    finally:
-        session.close()
+    pairs = get_common_usdc_pairs()
+    logger.info(f"📦 Common tradable USDC pairs: {pairs}")
+
+    scan_market(pairs, session)
 
 if __name__ == "__main__":
     main()
