@@ -11,7 +11,7 @@ os.makedirs("logs", exist_ok=True)
 
 # Immediately initialize root logger so file handlers are attached early
 logger = logging.getLogger("arb-bot")
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 
 if not logger.handlers:
     formatter = logging.Formatter(
@@ -54,6 +54,24 @@ if not logger.handlers:
 
 
 # Use this function in all modules (e.g. db.py, engine.py) to ensure consistent logging behavior
-# Example: logger = get_logger(__name__)
+# Example: logger = get_logger(__name__, level="DEBUG")
 def get_logger(name: str = "arb-bot", level: str = "INFO") -> logging.Logger:
-    return logger
+    log = logging.getLogger(name)
+    numeric_level = getattr(logging, level.upper(), None)
+    if not isinstance(numeric_level, int):
+        raise ValueError(f"Invalid log level: {level}")
+    log.setLevel(numeric_level)
+    if not log.handlers:
+        formatter = logging.Formatter(
+            fmt="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+            datefmt="%Y-%m-%d %H:%M:%S"
+        )
+
+        stream_handler = logging.StreamHandler(sys.stdout)
+        stream_handler.setFormatter(formatter)
+        log.addHandler(stream_handler)
+
+        file_handler = RotatingFileHandler("logs/arb-bot.log", maxBytes=5*1024*1024, backupCount=3)
+        file_handler.setFormatter(formatter)
+        log.addHandler(file_handler)
+    return log

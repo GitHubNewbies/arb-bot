@@ -18,6 +18,9 @@ BYBIT_API_KEY = os.getenv("BYBIT_API_KEY")
 BYBIT_API_SECRET = os.getenv("BYBIT_API_SECRET")
 
 def _binance_order(symbol: str, side: str, quantity: Decimal, price: Decimal) -> None:
+    assert side.upper() in ("BUY", "SELL"), f"❌ Invalid side: {side}"
+    quantity = Decimal(quantity).normalize()
+    price = Decimal(price).normalize()
     try:
         if not BINANCE_API_KEY or not BINANCE_API_SECRET:
             raise EnvironmentError("❌ Binance API credentials missing")
@@ -30,10 +33,12 @@ def _binance_order(symbol: str, side: str, quantity: Decimal, price: Decimal) ->
             "side": side.upper(),
             "type": "LIMIT",
             "timeInForce": "GTC",
-            "quantity": str(quantity.normalize()),
-            "price": str(price.normalize()),
+            "quantity": str(quantity),
+            "price": str(price),
             "recvWindow": 5000,
         }
+
+        logger.info(f"[LIVE] Placing {side.upper()} order on BINANCE for {symbol}: Qty={quantity}, Price={price}")
 
         headers, signed_params = sign_request(
             endpoint=endpoint,
@@ -63,6 +68,9 @@ def _binance_order(symbol: str, side: str, quantity: Decimal, price: Decimal) ->
         raise
 
 def _bybit_order(symbol: str, side: str, quantity: Decimal, price: Decimal) -> None:
+    assert side.upper() in ("BUY", "SELL"), f"❌ Invalid side: {side}"
+    quantity = Decimal(quantity).normalize()
+    price = Decimal(price).normalize()
     try:
         if not BYBIT_API_KEY or not BYBIT_API_SECRET:
             raise EnvironmentError("❌ Bybit API credentials missing")
@@ -80,6 +88,8 @@ def _bybit_order(symbol: str, side: str, quantity: Decimal, price: Decimal) -> N
             "apiKey": BYBIT_API_KEY,
             "timestamp": timestamp,
         }
+
+        logger.info(f"[LIVE] Placing {side.upper()} order on BYBIT for {symbol}: Qty={quantity}, Price={price}")
 
         param_string = "&".join(f"{k}={v}" for k, v in sorted(params.items()))
         signature = hmac.new(BYBIT_API_SECRET.encode(), param_string.encode(), hashlib.sha256).hexdigest()

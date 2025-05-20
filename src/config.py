@@ -21,3 +21,13 @@ def get_price_lookup():
     except Exception as e:
         logging.exception("Failed to load price lookup.")
         raise
+
+
+def get_balance_safety_threshold():
+    try:
+        threshold = float(os.getenv("BALANCE_SAFETY_THRESHOLD", "0.95"))
+        logging.info(f"Loaded balance safety threshold: {threshold}")
+        return threshold
+    except Exception as e:
+        logging.exception("Failed to load balance safety threshold.")
+        raise

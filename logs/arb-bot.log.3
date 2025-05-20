@@ -1,0 +1,378 @@
+2025-05-19 16:32:53 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:53 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:32:53 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:32:53 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': '7553e4360f822554bc96d9f4da12201da1bede19b1db026478efbb20f04e1bd7', 'X-BAPI-TIMESTAMP': '1747672373333', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:32:53 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:53 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 4.55800000 for DOT/USDC
+2025-05-19 16:32:53 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for DOT/USDC (SELL)
+2025-05-19 16:32:53 | WARNING | arb-bot | ⚠️ Computed notional value too low for DOT/USDC | Value: 0E-9
+2025-05-19 16:32:53 | DEBUG | arb-bot | 📦 Bybit SELL quantity for DOT/USDC: None
+2025-05-19 16:32:53 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 4.55800000 for DOT/USDC
+2025-05-19 16:32:53 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for DOT/USDC (BUY)
+2025-05-19 16:32:53 | WARNING | arb-bot | ⚠️ Computed notional value too low for DOT/USDC | Value: 0E-9
+2025-05-19 16:32:53 | DEBUG | arb-bot | 📦 Bybit BUY quantity for DOT/USDC: None
+2025-05-19 16:32:53 | DEBUG | arb-bot | Spread too low on DOT/USDC: 0.13% / 0.13%
+2025-05-19 16:32:53 | INFO | arb-bot | 🔍 Scanning ENA/USDC
+2025-05-19 16:32:53 | DEBUG | arb-bot | 🔢 Binance price for ENA/USDC: 0.36090000
+2025-05-19 16:32:53 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ENA/USDC (0.36090000)
+2025-05-19 16:32:54 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672374109
+2025-05-19 16:32:54 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672374109&signature=340b69da68736733344423b658ed7450afda523dc012f83f4bfc84b5fbde8e84
+2025-05-19 16:32:54 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:32:54 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672374109&signature=340b69da68736733344423b658ed7450afda523dc012f83f4bfc84b5fbde8e84
+2025-05-19 16:32:54 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for ENA/USDC (BUY)
+2025-05-19 16:32:54 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:32:54 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for ENA/USDC
+2025-05-19 16:32:54 | DEBUG | arb-bot | 📦 Binance quantity for ENA/USDC: 0
+2025-05-19 16:32:54 | WARNING | arb-bot | ⚠️ Skipping ENA/USDC on binance: quantity is zero.
+2025-05-19 16:32:54 | DEBUG | arb-bot | 🔢 Bybit price for ENA/USDC: 0.36140000
+2025-05-19 16:32:54 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ENA/USDC (0.36140000)
+2025-05-19 16:32:54 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:54 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:32:54 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:32:54 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': '1bbe23b8497910459695571748c426b12350ca3f4f11ee7c48770f0604c94262', 'X-BAPI-TIMESTAMP': '1747672374704', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:32:54 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:54 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.36140000 for ENA/USDC
+2025-05-19 16:32:54 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ENA/USDC (SELL)
+2025-05-19 16:32:54 | WARNING | arb-bot | ⚠️ Computed notional value too low for ENA/USDC | Value: 0E-9
+2025-05-19 16:32:54 | DEBUG | arb-bot | 📦 Bybit SELL quantity for ENA/USDC: None
+2025-05-19 16:32:54 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.36140000 for ENA/USDC
+2025-05-19 16:32:54 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ENA/USDC (BUY)
+2025-05-19 16:32:54 | WARNING | arb-bot | ⚠️ Computed notional value too low for ENA/USDC | Value: 0E-9
+2025-05-19 16:32:54 | DEBUG | arb-bot | 📦 Bybit BUY quantity for ENA/USDC: None
+2025-05-19 16:32:54 | DEBUG | arb-bot | Spread too low on ENA/USDC: 0.14% / 0.14%
+2025-05-19 16:32:54 | INFO | arb-bot | 🔍 Scanning ETH/USDC
+2025-05-19 16:32:55 | DEBUG | arb-bot | 🔢 Binance price for ETH/USDC: 2469.81000000
+2025-05-19 16:32:55 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ETH/USDC (2469.81000000)
+2025-05-19 16:32:55 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672375442
+2025-05-19 16:32:55 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672375442&signature=ffea617031936e1fa70807576c10d49f7d58cb144f87caca090826947475d86f
+2025-05-19 16:32:55 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:32:55 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672375442&signature=ffea617031936e1fa70807576c10d49f7d58cb144f87caca090826947475d86f
+2025-05-19 16:32:55 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for ETH/USDC (BUY)
+2025-05-19 16:32:55 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:32:55 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for ETH/USDC
+2025-05-19 16:32:55 | DEBUG | arb-bot | 📦 Binance quantity for ETH/USDC: 0
+2025-05-19 16:32:55 | WARNING | arb-bot | ⚠️ Skipping ETH/USDC on binance: quantity is zero.
+2025-05-19 16:32:56 | DEBUG | arb-bot | 🔢 Bybit price for ETH/USDC: 2469.50000000
+2025-05-19 16:32:56 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ETH/USDC (2469.50000000)
+2025-05-19 16:32:56 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:56 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:32:56 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:32:56 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': '9b93f763745efeb3f323146eec477ac27f2e847791f561408e484f2bf074e295', 'X-BAPI-TIMESTAMP': '1747672376038', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:32:56 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:56 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 2469.50000000 for ETH/USDC
+2025-05-19 16:32:56 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ETH/USDC (SELL)
+2025-05-19 16:32:56 | WARNING | arb-bot | ⚠️ Computed notional value too low for ETH/USDC | Value: 0E-9
+2025-05-19 16:32:56 | DEBUG | arb-bot | 📦 Bybit SELL quantity for ETH/USDC: None
+2025-05-19 16:32:56 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 2469.50000000 for ETH/USDC
+2025-05-19 16:32:56 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ETH/USDC (BUY)
+2025-05-19 16:32:56 | WARNING | arb-bot | ⚠️ Computed notional value too low for ETH/USDC | Value: 0E-9
+2025-05-19 16:32:56 | DEBUG | arb-bot | 📦 Bybit BUY quantity for ETH/USDC: None
+2025-05-19 16:32:56 | DEBUG | arb-bot | Spread too low on ETH/USDC: 0.01% / 0.01%
+2025-05-19 16:32:56 | INFO | arb-bot | 🔍 Scanning ETHFI/USDC
+2025-05-19 16:32:56 | DEBUG | arb-bot | 🔢 Binance price for ETHFI/USDC: 1.25500000
+2025-05-19 16:32:56 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ETHFI/USDC (1.25500000)
+2025-05-19 16:32:56 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672376744
+2025-05-19 16:32:56 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672376744&signature=63b5094569cc725e86cda62db72ba86ce48f823abef5ae038410ca25dbcfc7ea
+2025-05-19 16:32:57 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:32:57 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672376744&signature=63b5094569cc725e86cda62db72ba86ce48f823abef5ae038410ca25dbcfc7ea
+2025-05-19 16:32:57 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for ETHFI/USDC (BUY)
+2025-05-19 16:32:57 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:32:57 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for ETHFI/USDC
+2025-05-19 16:32:57 | DEBUG | arb-bot | 📦 Binance quantity for ETHFI/USDC: 0
+2025-05-19 16:32:57 | WARNING | arb-bot | ⚠️ Skipping ETHFI/USDC on binance: quantity is zero.
+2025-05-19 16:32:57 | DEBUG | arb-bot | 🔢 Bybit price for ETHFI/USDC: 1.25840000
+2025-05-19 16:32:57 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ETHFI/USDC (1.25840000)
+2025-05-19 16:32:57 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:57 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:32:57 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:32:57 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': '9a2943991bee3f4e810bb23889ed816b2937a1a3b3e25d10c9d907514820f7bc', 'X-BAPI-TIMESTAMP': '1747672377340', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:32:57 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:57 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 1.25840000 for ETHFI/USDC
+2025-05-19 16:32:57 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ETHFI/USDC (SELL)
+2025-05-19 16:32:57 | WARNING | arb-bot | ⚠️ Computed notional value too low for ETHFI/USDC | Value: 0E-9
+2025-05-19 16:32:57 | DEBUG | arb-bot | 📦 Bybit SELL quantity for ETHFI/USDC: None
+2025-05-19 16:32:57 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 1.25840000 for ETHFI/USDC
+2025-05-19 16:32:57 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ETHFI/USDC (BUY)
+2025-05-19 16:32:57 | WARNING | arb-bot | ⚠️ Computed notional value too low for ETHFI/USDC | Value: 0E-9
+2025-05-19 16:32:57 | DEBUG | arb-bot | 📦 Bybit BUY quantity for ETHFI/USDC: None
+2025-05-19 16:32:57 | DEBUG | arb-bot | Spread too low on ETHFI/USDC: 0.27% / 0.27%
+2025-05-19 16:32:57 | INFO | arb-bot | 🔍 Scanning LINK/USDC
+2025-05-19 16:32:57 | DEBUG | arb-bot | 🔢 Binance price for LINK/USDC: 15.49000000
+2025-05-19 16:32:57 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for LINK/USDC (15.49000000)
+2025-05-19 16:32:58 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672378119
+2025-05-19 16:32:58 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672378119&signature=2ed75cb86847ca929c87a3d58b522f689de3f14a7a1f1e64ae02603f00238e07
+2025-05-19 16:32:58 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:32:58 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672378119&signature=2ed75cb86847ca929c87a3d58b522f689de3f14a7a1f1e64ae02603f00238e07
+2025-05-19 16:32:58 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for LINK/USDC (BUY)
+2025-05-19 16:32:58 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:32:58 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for LINK/USDC
+2025-05-19 16:32:58 | DEBUG | arb-bot | 📦 Binance quantity for LINK/USDC: 0
+2025-05-19 16:32:58 | WARNING | arb-bot | ⚠️ Skipping LINK/USDC on binance: quantity is zero.
+2025-05-19 16:32:58 | DEBUG | arb-bot | 🔢 Bybit price for LINK/USDC: 15.49400000
+2025-05-19 16:32:58 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for LINK/USDC (15.49400000)
+2025-05-19 16:32:58 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:58 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:32:58 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:32:58 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': 'bd7d83f7df3c47ce06d5467d5fc8054b018306149d0fe8b483a033a4f2758dd0', 'X-BAPI-TIMESTAMP': '1747672378778', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:32:58 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:32:59 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 15.49400000 for LINK/USDC
+2025-05-19 16:32:59 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for LINK/USDC (SELL)
+2025-05-19 16:32:59 | WARNING | arb-bot | ⚠️ Computed notional value too low for LINK/USDC | Value: 0E-9
+2025-05-19 16:32:59 | DEBUG | arb-bot | 📦 Bybit SELL quantity for LINK/USDC: None
+2025-05-19 16:32:59 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 15.49400000 for LINK/USDC
+2025-05-19 16:32:59 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for LINK/USDC (BUY)
+2025-05-19 16:32:59 | WARNING | arb-bot | ⚠️ Computed notional value too low for LINK/USDC | Value: 0E-9
+2025-05-19 16:32:59 | DEBUG | arb-bot | 📦 Bybit BUY quantity for LINK/USDC: None
+2025-05-19 16:32:59 | DEBUG | arb-bot | Spread too low on LINK/USDC: 0.03% / 0.03%
+2025-05-19 16:32:59 | INFO | arb-bot | 🔍 Scanning LTC/USDC
+2025-05-19 16:32:59 | DEBUG | arb-bot | 🔢 Binance price for LTC/USDC: 98.12000000
+2025-05-19 16:32:59 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for LTC/USDC (98.12000000)
+2025-05-19 16:32:59 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672379547
+2025-05-19 16:32:59 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672379547&signature=3231f6eb05547e83041da9e1cbf2a397d6a203a6542b788b773c34944244ed03
+2025-05-19 16:32:59 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:32:59 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672379547&signature=3231f6eb05547e83041da9e1cbf2a397d6a203a6542b788b773c34944244ed03
+2025-05-19 16:32:59 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for LTC/USDC (BUY)
+2025-05-19 16:32:59 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:32:59 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for LTC/USDC
+2025-05-19 16:32:59 | DEBUG | arb-bot | 📦 Binance quantity for LTC/USDC: 0
+2025-05-19 16:32:59 | WARNING | arb-bot | ⚠️ Skipping LTC/USDC on binance: quantity is zero.
+2025-05-19 16:33:00 | DEBUG | arb-bot | 🔢 Bybit price for LTC/USDC: 98.00000000
+2025-05-19 16:33:00 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for LTC/USDC (98.00000000)
+2025-05-19 16:33:00 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:00 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:33:00 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:33:00 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': 'a0853ee55dce4e6a2ed9e56f7407f39b898566826a28da79d443ff524bab4a5b', 'X-BAPI-TIMESTAMP': '1747672380160', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:33:00 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:00 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 98.00000000 for LTC/USDC
+2025-05-19 16:33:00 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for LTC/USDC (SELL)
+2025-05-19 16:33:00 | WARNING | arb-bot | ⚠️ Computed notional value too low for LTC/USDC | Value: 0E-9
+2025-05-19 16:33:00 | DEBUG | arb-bot | 📦 Bybit SELL quantity for LTC/USDC: None
+2025-05-19 16:33:00 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 98.00000000 for LTC/USDC
+2025-05-19 16:33:00 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for LTC/USDC (BUY)
+2025-05-19 16:33:00 | WARNING | arb-bot | ⚠️ Computed notional value too low for LTC/USDC | Value: 0E-9
+2025-05-19 16:33:00 | DEBUG | arb-bot | 📦 Bybit BUY quantity for LTC/USDC: None
+2025-05-19 16:33:00 | DEBUG | arb-bot | Spread too low on LTC/USDC: 0.12% / 0.12%
+2025-05-19 16:33:00 | INFO | arb-bot | 🔍 Scanning NOT/USDC
+2025-05-19 16:33:00 | DEBUG | arb-bot | 🔢 Binance price for NOT/USDC: 0.00274400
+2025-05-19 16:33:00 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for NOT/USDC (0.00274400)
+2025-05-19 16:33:00 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672380833
+2025-05-19 16:33:00 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672380833&signature=7c64695047335f28e06dcd887799eb5ce8387c0cfea2606542b59494500a2ce2
+2025-05-19 16:33:01 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:33:01 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672380833&signature=7c64695047335f28e06dcd887799eb5ce8387c0cfea2606542b59494500a2ce2
+2025-05-19 16:33:01 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for NOT/USDC (BUY)
+2025-05-19 16:33:01 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:33:01 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for NOT/USDC
+2025-05-19 16:33:01 | DEBUG | arb-bot | 📦 Binance quantity for NOT/USDC: 0
+2025-05-19 16:33:01 | WARNING | arb-bot | ⚠️ Skipping NOT/USDC on binance: quantity is zero.
+2025-05-19 16:33:01 | DEBUG | arb-bot | 🔢 Bybit price for NOT/USDC: 0.00274900
+2025-05-19 16:33:01 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for NOT/USDC (0.00274900)
+2025-05-19 16:33:01 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:01 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:33:01 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:33:01 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': 'a98f17ea6afa9313cad2bb9c10dd90ebb55a4ea2fc2534253499cc921961a7b3', 'X-BAPI-TIMESTAMP': '1747672381511', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:33:01 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:01 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.00274900 for NOT/USDC
+2025-05-19 16:33:01 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for NOT/USDC (SELL)
+2025-05-19 16:33:01 | WARNING | arb-bot | ⚠️ Computed notional value too low for NOT/USDC | Value: 0E-9
+2025-05-19 16:33:01 | DEBUG | arb-bot | 📦 Bybit SELL quantity for NOT/USDC: None
+2025-05-19 16:33:01 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.00274900 for NOT/USDC
+2025-05-19 16:33:01 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for NOT/USDC (BUY)
+2025-05-19 16:33:01 | WARNING | arb-bot | ⚠️ Computed notional value too low for NOT/USDC | Value: 0E-9
+2025-05-19 16:33:01 | DEBUG | arb-bot | 📦 Bybit BUY quantity for NOT/USDC: None
+2025-05-19 16:33:01 | DEBUG | arb-bot | Spread too low on NOT/USDC: 0.18% / 0.18%
+2025-05-19 16:33:01 | INFO | arb-bot | 🔍 Scanning ONDO/USDC
+2025-05-19 16:33:02 | DEBUG | arb-bot | 🔢 Binance price for ONDO/USDC: 0.91700000
+2025-05-19 16:33:02 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ONDO/USDC (0.91700000)
+2025-05-19 16:33:02 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672382250
+2025-05-19 16:33:02 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672382250&signature=c45f7f2d7f8ae79a76d55d42b84f1faa88677267264ff92de9092c39085f985d
+2025-05-19 16:33:02 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:33:02 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672382250&signature=c45f7f2d7f8ae79a76d55d42b84f1faa88677267264ff92de9092c39085f985d
+2025-05-19 16:33:02 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for ONDO/USDC (BUY)
+2025-05-19 16:33:02 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:33:02 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for ONDO/USDC
+2025-05-19 16:33:02 | DEBUG | arb-bot | 📦 Binance quantity for ONDO/USDC: 0
+2025-05-19 16:33:02 | WARNING | arb-bot | ⚠️ Skipping ONDO/USDC on binance: quantity is zero.
+2025-05-19 16:33:02 | DEBUG | arb-bot | 🔢 Bybit price for ONDO/USDC: 0.91620000
+2025-05-19 16:33:02 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ONDO/USDC (0.91620000)
+2025-05-19 16:33:02 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:02 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:33:02 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:33:02 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': '3502e742db780daadd672c9aa487e8aceb234150c7e2bfc15a2c20c2bb292303', 'X-BAPI-TIMESTAMP': '1747672382856', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:33:02 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:03 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.91620000 for ONDO/USDC
+2025-05-19 16:33:03 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ONDO/USDC (SELL)
+2025-05-19 16:33:03 | WARNING | arb-bot | ⚠️ Computed notional value too low for ONDO/USDC | Value: 0E-9
+2025-05-19 16:33:03 | DEBUG | arb-bot | 📦 Bybit SELL quantity for ONDO/USDC: None
+2025-05-19 16:33:03 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.91620000 for ONDO/USDC
+2025-05-19 16:33:03 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ONDO/USDC (BUY)
+2025-05-19 16:33:03 | WARNING | arb-bot | ⚠️ Computed notional value too low for ONDO/USDC | Value: 0E-9
+2025-05-19 16:33:03 | DEBUG | arb-bot | 📦 Bybit BUY quantity for ONDO/USDC: None
+2025-05-19 16:33:03 | DEBUG | arb-bot | Spread too low on ONDO/USDC: 0.09% / 0.09%
+2025-05-19 16:33:03 | INFO | arb-bot | 🔍 Scanning OP/USDC
+2025-05-19 16:33:03 | DEBUG | arb-bot | 🔢 Binance price for OP/USDC: 0.70300000
+2025-05-19 16:33:03 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for OP/USDC (0.70300000)
+2025-05-19 16:33:03 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672383525
+2025-05-19 16:33:03 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672383525&signature=de08637a397f0e875781925923b8cde8f72954bc5c878f8bc2708a9d14db181b
+2025-05-19 16:33:03 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:33:03 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672383525&signature=de08637a397f0e875781925923b8cde8f72954bc5c878f8bc2708a9d14db181b
+2025-05-19 16:33:03 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for OP/USDC (BUY)
+2025-05-19 16:33:03 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:33:03 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for OP/USDC
+2025-05-19 16:33:03 | DEBUG | arb-bot | 📦 Binance quantity for OP/USDC: 0
+2025-05-19 16:33:03 | WARNING | arb-bot | ⚠️ Skipping OP/USDC on binance: quantity is zero.
+2025-05-19 16:33:04 | DEBUG | arb-bot | 🔢 Bybit price for OP/USDC: 0.70120000
+2025-05-19 16:33:04 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for OP/USDC (0.70120000)
+2025-05-19 16:33:04 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:04 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:33:04 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:33:04 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': '7c59184d335bc0dd2b008da7028777710cdc9387790f78de9258d6818c35bedf', 'X-BAPI-TIMESTAMP': '1747672384180', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:33:04 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:04 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.70120000 for OP/USDC
+2025-05-19 16:33:04 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for OP/USDC (SELL)
+2025-05-19 16:33:04 | WARNING | arb-bot | ⚠️ Computed notional value too low for OP/USDC | Value: 0E-9
+2025-05-19 16:33:04 | DEBUG | arb-bot | 📦 Bybit SELL quantity for OP/USDC: None
+2025-05-19 16:33:04 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.70120000 for OP/USDC
+2025-05-19 16:33:04 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for OP/USDC (BUY)
+2025-05-19 16:33:04 | WARNING | arb-bot | ⚠️ Computed notional value too low for OP/USDC | Value: 0E-9
+2025-05-19 16:33:04 | DEBUG | arb-bot | 📦 Bybit BUY quantity for OP/USDC: None
+2025-05-19 16:33:04 | DEBUG | arb-bot | Spread too low on OP/USDC: 0.26% / 0.26%
+2025-05-19 16:33:04 | INFO | arb-bot | 🔍 Scanning ORDI/USDC
+2025-05-19 16:33:04 | DEBUG | arb-bot | 🔢 Binance price for ORDI/USDC: 9.56700000
+2025-05-19 16:33:04 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ORDI/USDC (9.56700000)
+2025-05-19 16:33:04 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672384869
+2025-05-19 16:33:04 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672384869&signature=39a654f963e7819aabe55ed1fdfc3ff6a9490915dc538681b6fdcb0689eb7954
+2025-05-19 16:33:05 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:33:05 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672384869&signature=39a654f963e7819aabe55ed1fdfc3ff6a9490915dc538681b6fdcb0689eb7954
+2025-05-19 16:33:05 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for ORDI/USDC (BUY)
+2025-05-19 16:33:05 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:33:05 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for ORDI/USDC
+2025-05-19 16:33:05 | DEBUG | arb-bot | 📦 Binance quantity for ORDI/USDC: 0
+2025-05-19 16:33:05 | WARNING | arb-bot | ⚠️ Skipping ORDI/USDC on binance: quantity is zero.
+2025-05-19 16:33:05 | DEBUG | arb-bot | 🔢 Bybit price for ORDI/USDC: 9.53300000
+2025-05-19 16:33:05 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ORDI/USDC (9.53300000)
+2025-05-19 16:33:05 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:05 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:33:05 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:33:05 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': '010a43e5236d9e90586dc2a94d4a70bad379c020e36dc5dd32c51b2dd90be6a9', 'X-BAPI-TIMESTAMP': '1747672385465', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:33:05 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:05 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 9.53300000 for ORDI/USDC
+2025-05-19 16:33:05 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ORDI/USDC (SELL)
+2025-05-19 16:33:05 | WARNING | arb-bot | ⚠️ Computed notional value too low for ORDI/USDC | Value: 0E-9
+2025-05-19 16:33:05 | DEBUG | arb-bot | 📦 Bybit SELL quantity for ORDI/USDC: None
+2025-05-19 16:33:05 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 9.53300000 for ORDI/USDC
+2025-05-19 16:33:05 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for ORDI/USDC (BUY)
+2025-05-19 16:33:05 | WARNING | arb-bot | ⚠️ Computed notional value too low for ORDI/USDC | Value: 0E-9
+2025-05-19 16:33:05 | DEBUG | arb-bot | 📦 Bybit BUY quantity for ORDI/USDC: None
+2025-05-19 16:33:05 | DEBUG | arb-bot | Spread too low on ORDI/USDC: 0.36% / 0.36%
+2025-05-19 16:33:05 | INFO | arb-bot | 🔍 Scanning POL/USDC
+2025-05-19 16:33:05 | DEBUG | arb-bot | 🔢 Binance price for POL/USDC: 0.23210000
+2025-05-19 16:33:05 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for POL/USDC (0.23210000)
+2025-05-19 16:33:06 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672386144
+2025-05-19 16:33:06 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672386144&signature=a3282dbabe9972be986ca4b7243929f8d416488901b9d53b3b3625d209bce029
+2025-05-19 16:33:06 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:33:06 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672386144&signature=a3282dbabe9972be986ca4b7243929f8d416488901b9d53b3b3625d209bce029
+2025-05-19 16:33:06 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for POL/USDC (BUY)
+2025-05-19 16:33:06 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:33:06 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for POL/USDC
+2025-05-19 16:33:06 | DEBUG | arb-bot | 📦 Binance quantity for POL/USDC: 0
+2025-05-19 16:33:06 | WARNING | arb-bot | ⚠️ Skipping POL/USDC on binance: quantity is zero.
+2025-05-19 16:33:06 | DEBUG | arb-bot | 🔢 Bybit price for POL/USDC: 0.23200000
+2025-05-19 16:33:06 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for POL/USDC (0.23200000)
+2025-05-19 16:33:06 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:06 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:33:06 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:33:06 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': '10729b37de72ef74e8df20465eef9b376746cd18b1f47ddf92d81a8663b49ce4', 'X-BAPI-TIMESTAMP': '1747672386853', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:33:06 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:07 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.23200000 for POL/USDC
+2025-05-19 16:33:07 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for POL/USDC (SELL)
+2025-05-19 16:33:07 | WARNING | arb-bot | ⚠️ Computed notional value too low for POL/USDC | Value: 0E-9
+2025-05-19 16:33:07 | DEBUG | arb-bot | 📦 Bybit SELL quantity for POL/USDC: None
+2025-05-19 16:33:07 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.23200000 for POL/USDC
+2025-05-19 16:33:07 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for POL/USDC (BUY)
+2025-05-19 16:33:07 | WARNING | arb-bot | ⚠️ Computed notional value too low for POL/USDC | Value: 0E-9
+2025-05-19 16:33:07 | DEBUG | arb-bot | 📦 Bybit BUY quantity for POL/USDC: None
+2025-05-19 16:33:07 | DEBUG | arb-bot | Spread too low on POL/USDC: 0.04% / 0.04%
+2025-05-19 16:33:07 | INFO | arb-bot | 🔍 Scanning SOL/USDC
+2025-05-19 16:33:07 | DEBUG | arb-bot | 🔢 Binance price for SOL/USDC: 164.37000000
+2025-05-19 16:33:07 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for SOL/USDC (164.37000000)
+2025-05-19 16:33:08 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672387966
+2025-05-19 16:33:08 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672387966&signature=23ed6f53a5b57d66988843f536a572a75ec3640f27d8fa43a45d16c5fd51c635
+2025-05-19 16:33:08 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:33:08 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672387966&signature=23ed6f53a5b57d66988843f536a572a75ec3640f27d8fa43a45d16c5fd51c635
+2025-05-19 16:33:08 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for SOL/USDC (BUY)
+2025-05-19 16:33:08 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:33:08 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for SOL/USDC
+2025-05-19 16:33:08 | DEBUG | arb-bot | 📦 Binance quantity for SOL/USDC: 0
+2025-05-19 16:33:08 | WARNING | arb-bot | ⚠️ Skipping SOL/USDC on binance: quantity is zero.
+2025-05-19 16:33:08 | DEBUG | arb-bot | 🔢 Bybit price for SOL/USDC: 164.06000000
+2025-05-19 16:33:08 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for SOL/USDC (164.06000000)
+2025-05-19 16:33:08 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:08 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:33:08 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:33:08 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': '11161904b0a54968fa99951335005fdc2db483597fc2c18fc3d783e78a29b1ad', 'X-BAPI-TIMESTAMP': '1747672388583', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:33:08 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:08 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 164.06000000 for SOL/USDC
+2025-05-19 16:33:08 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for SOL/USDC (SELL)
+2025-05-19 16:33:08 | WARNING | arb-bot | ⚠️ Computed notional value too low for SOL/USDC | Value: 0E-9
+2025-05-19 16:33:08 | DEBUG | arb-bot | 📦 Bybit SELL quantity for SOL/USDC: None
+2025-05-19 16:33:08 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 164.06000000 for SOL/USDC
+2025-05-19 16:33:08 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for SOL/USDC (BUY)
+2025-05-19 16:33:08 | WARNING | arb-bot | ⚠️ Computed notional value too low for SOL/USDC | Value: 0E-9
+2025-05-19 16:33:08 | DEBUG | arb-bot | 📦 Bybit BUY quantity for SOL/USDC: None
+2025-05-19 16:33:08 | DEBUG | arb-bot | Spread too low on SOL/USDC: 0.19% / 0.19%
+2025-05-19 16:33:08 | INFO | arb-bot | 🔍 Scanning STRK/USDC
+2025-05-19 16:33:09 | DEBUG | arb-bot | 🔢 Binance price for STRK/USDC: 0.15170000
+2025-05-19 16:33:09 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for STRK/USDC (0.15170000)
+2025-05-19 16:33:09 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672389375
+2025-05-19 16:33:09 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672389375&signature=ff98422c01f6962a3becaed9584eea54d3fb6fb3446debe64ded07abff23f692
+2025-05-19 16:33:09 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:33:09 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672389375&signature=ff98422c01f6962a3becaed9584eea54d3fb6fb3446debe64ded07abff23f692
+2025-05-19 16:33:09 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for STRK/USDC (BUY)
+2025-05-19 16:33:09 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:33:09 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for STRK/USDC
+2025-05-19 16:33:09 | DEBUG | arb-bot | 📦 Binance quantity for STRK/USDC: 0
+2025-05-19 16:33:09 | WARNING | arb-bot | ⚠️ Skipping STRK/USDC on binance: quantity is zero.
+2025-05-19 16:33:09 | DEBUG | arb-bot | 🔢 Bybit price for STRK/USDC: 0.15150000
+2025-05-19 16:33:09 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for STRK/USDC (0.15150000)
+2025-05-19 16:33:09 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:09 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:33:09 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:33:09 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': 'd6d74a3152ee735bba2f271efc77d08644ae44dfa901bf10bd147f79805bfbe1', 'X-BAPI-TIMESTAMP': '1747672389979', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:33:09 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:10 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.15150000 for STRK/USDC
+2025-05-19 16:33:10 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for STRK/USDC (SELL)
+2025-05-19 16:33:10 | WARNING | arb-bot | ⚠️ Computed notional value too low for STRK/USDC | Value: 0E-9
+2025-05-19 16:33:10 | DEBUG | arb-bot | 📦 Bybit SELL quantity for STRK/USDC: None
+2025-05-19 16:33:10 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 0.15150000 for STRK/USDC
+2025-05-19 16:33:10 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for STRK/USDC (BUY)
+2025-05-19 16:33:10 | WARNING | arb-bot | ⚠️ Computed notional value too low for STRK/USDC | Value: 0E-9
+2025-05-19 16:33:10 | DEBUG | arb-bot | 📦 Bybit BUY quantity for STRK/USDC: None
+2025-05-19 16:33:10 | DEBUG | arb-bot | Spread too low on STRK/USDC: 0.13% / 0.13%
+2025-05-19 16:33:10 | INFO | arb-bot | 🔍 Scanning SUI/USDC
+2025-05-19 16:33:10 | DEBUG | arb-bot | 🔢 Binance price for SUI/USDC: 3.75760000
+2025-05-19 16:33:10 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for SUI/USDC (3.75760000)
+2025-05-19 16:33:10 | DEBUG | arb-bot | 🧾 Binance query string to sign: recvWindow=5000&timestamp=1747672390665
+2025-05-19 16:33:10 | DEBUG | arb-bot | 🌐 Full Binance request URL: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672390665&signature=c96abc0b8b559d7532350a08120152f807fb174ee82e44defeaa54f75b2a6cd4
+2025-05-19 16:33:11 | DEBUG | arb-bot | 📉 Raw Binance margin response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-05-19 16:33:11 | ERROR | arb-bot | ❌ Binance balance fetch error for USDC: 400 Client Error:  for url: https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1747672390665&signature=c96abc0b8b559d7532350a08120152f807fb174ee82e44defeaa54f75b2a6cd4
+2025-05-19 16:33:11 | INFO | arb-bot | 📊 Fetching 0 balance to calculate quantity for SUI/USDC (BUY)
+2025-05-19 16:33:11 | ERROR | arb-bot | ❌ Invalid asset requested for Binance balance: 0
+2025-05-19 16:33:11 | WARNING | arb-bot | ⚠️ Safe balance is too low after applying safety margins for SUI/USDC
+2025-05-19 16:33:11 | DEBUG | arb-bot | 📦 Binance quantity for SUI/USDC: 0
+2025-05-19 16:33:11 | WARNING | arb-bot | ⚠️ Skipping SUI/USDC on binance: quantity is zero.
+2025-05-19 16:33:11 | DEBUG | arb-bot | 🔢 Bybit price for SUI/USDC: 3.75460000
+2025-05-19 16:33:11 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for SUI/USDC (3.75460000)
+2025-05-19 16:33:11 | DEBUG | arb-bot | 📥 sign_request() called with endpoint: /v5/account/wallet-balance, method: GET, params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:11 | ERROR | arb-bot | ❌ API key seems invalid or empty: '4l0bdhpRUiaTaCHwLr'
+2025-05-19 16:33:11 | DEBUG | arb-bot | ✅ API secret loaded and appears valid.
+2025-05-19 16:33:11 | DEBUG | arb-bot | 🔍 sign_request() returning headers: {'X-BAPI-API-KEY': '4l0bdhpRUiaTaCHwLr', 'X-BAPI-SIGN': 'b84156179b0bde1516e812026defa532483b81b2f58d165340b8df3a17dd8333', 'X-BAPI-TIMESTAMP': '1747672391252', 'X-BAPI-RECV-WINDOW': '5000', 'Content-Type': 'application/json'}
+2025-05-19 16:33:11 | DEBUG | arb-bot | 🔍 sign_request() returning query_params: {'accountType': 'UNIFIED'}
+2025-05-19 16:33:11 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 3.75460000 for SUI/USDC
+2025-05-19 16:33:11 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for SUI/USDC (SELL)
+2025-05-19 16:33:11 | WARNING | arb-bot | ⚠️ Computed notional value too low for SUI/USDC | Value: 0E-9
+2025-05-19 16:33:11 | DEBUG | arb-bot | 📦 Bybit SELL quantity for SUI/USDC: None
+2025-05-19 16:33:11 | DEBUG | arb-bot | 🔍 Converted price to Decimal: 3.75460000 for SUI/USDC
+2025-05-19 16:33:11 | INFO | arb-bot | 📊 Fetching balance for USDC to calculate quantity for SUI/USDC (BUY)
+2025-05-19 16:33:11 | WARNING | arb-bot | ⚠️ Computed notional value too low for SUI/USDC | Value: 0E-9
+2025-05-19 16:33:11 | DEBUG | arb-bot | 📦 Bybit BUY quantity for SUI/USDC: None
+2025-05-19 16:33:11 | DEBUG | arb-bot | Spread too low on SUI/USDC: 0.08% / 0.08%
